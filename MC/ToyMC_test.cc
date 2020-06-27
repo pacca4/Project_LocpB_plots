@@ -119,7 +119,7 @@ double runToyModel(Int_t nbins=100) {
 	nll *= -1.0;
 
 
-	cout << "Negative Log Likelihood: " << nll << endl;
+	//cout << "Negative Log Likelihood: " << nll << endl;
 
 	delete f;
 	delete h;
@@ -131,11 +131,15 @@ double runToyModel(Int_t nbins=100) {
 
 
 
-void sampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100) {
+void sampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, int patience=10) {
 	vector<double> nlls(0);
 
 	for (int i=0; i<nsamples; ++i) {
 		nlls.push_back(runToyModel(nbins2));
+		if(i%patience==0){
+			std::cout << "Progress " << int(i*100.0/nsamples) << " %\r";
+    			std::cout.flush();
+		}
 	}
 
 	double xmin = *min_element(nlls.begin(), nlls.end());
