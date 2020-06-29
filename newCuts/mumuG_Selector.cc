@@ -38,7 +38,8 @@ void mumuG_Selector( const string& file,  const string& outfile ) {
     oldtree->SetBranchStatus("MuMu_invMass",1);
     oldtree->SetBranchStatus("MuMuG_invMass",1);
 
-
+    oldtree->SetBranchStatus("HLT_IsoMu27",1);
+    oldtree->SetBranchStatus("HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ",1);
 
     //triggers
     auto list = oldtree->GetListOfBranches();
@@ -52,7 +53,7 @@ void mumuG_Selector( const string& file,  const string& outfile ) {
     if(list->Contains("HLT_Dimuon10_Jpsi_Barrel")) oldtree->SetBranchStatus("HLT_Dimuon10_Jpsi_Barrel",1);
     
         //Create a new file + a clone of old tree in new file
-    TFile *newfile = new TFile(("Cutted_"+outfile+".root").c_str(),"recreate");
+    TFile *newfile = new TFile(("Selected_"+outfile+".root").c_str(),"recreate");
     TTree *newtree = oldtree->CloneTree(0);
     //new branches
     float mumuAng, JpsiGAng, Jpsi_eta, Jpsi_pt, Jpsi_phi;

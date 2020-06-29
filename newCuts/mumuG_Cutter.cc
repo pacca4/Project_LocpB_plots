@@ -44,7 +44,16 @@ void mumuG_Cutter( const string& file,  const string& outfile ) {
 
     //Create a new file + a clone of old tree in new file
     TFile *newfile = new TFile(("Cutted_"+outfile+".root").c_str(),"recreate");
-    TTree *newtree = oldtree->CloneTree(0);
+    TTree *newtree_noT   = oldtree->CloneTree(0); //no trigger selection
+    TTree *newtree_T1    = oldtree->CloneTree(0); //selectio with HLT_IsoMu27
+    TTree *newtree_T2    = oldtree->CloneTree(0); //selection with HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ
+    TTree *newtree_T1_T2 = oldtree->CloneTree(0); //selection with triggers logic OR
+    TTree *newtree_T12   = oldtree->CloneTree(0); //selection with trigger logic AND
+
+    newtree_T1    -> SetName("Events_TriggerIsoMu27");
+    newtree_T2    -> SetName("Events_TriggerMu17Mu8Iso");    
+    newtree_T1_T2 -> SetName("Events_TriggerOR");
+    newtree_T12   -> SetName("Events_TriggerAND");
 
     TTreeReader myread(oldtree);
 	TTreeReaderArray<Float_t> muon_pt     = {myread, "Muon_pt"       };
@@ -62,9 +71,11 @@ void mumuG_Cutter( const string& file,  const string& outfile ) {
 	TTreeReaderArray<Float_t> mm_mass     = {myread, "MuMu_invMass"  };
 	TTreeReaderArray<Float_t> mmg_mass    = {myread, "MuMuG_invMass" };
     TTreeReaderArray<Float_t> mAng        = {myread, "mumuAng"       };
-	TTreeReaderArray<Float_t> JAng        = {myread, "JpsiGAng"      };
+    TTreeReaderArray<Float_t> JAng        = {myread, "JpsiGAng"      };
+	TTreeReaderArray<Bool_t>  Trig1       = {myread, "HLT_IsoMu27"   };
+	TTreeReaderArray<Bool_t>  Trig2       = {myread, "HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ" };
 	
-    int saved=0;
+    int saved=0, save1=0, save2=0, saveOR=0, saveAND=0;
 
     for (Long64_t i=0;i<oldtree->GetEntries(); i++) {
         myread.Next();
@@ -101,12 +112,19 @@ void mumuG_Cutter( const string& file,  const string& outfile ) {
 
         if(save){
             oldtree->GetEntry(i);
-            newtree->Fill();
-            saved++;
+            newtree_noT->Fill(); saved++;
+            if(Trig1[0]==1 )                {newtree_T1    ->Fill(); save1++;  }
+            if(Trig2[0]==1 )                {newtree_T2    ->Fill(); save2++;  }
+            if(Trig1[0]==1 || Trig2[0]==1 ) {newtree_T1_T2 ->Fill(); saveOR++; }
+            if(Trig1[0]==1 && Trig2[0]==1 ) {newtree_T12   ->Fill(); saveAND++;}
         }      
     }
 
-    cout<<"Total saved: "<<saved<<" -> "<<float(saved)*100/(oldtree->GetEntries())<<"%\n";
+    cout<<"Total saved: "<<saved   <<" -> "<<float(saved  )*100/(oldtree->GetEntries())<<"%\n";
+    cout<<"T1    saved: "<<save1   <<" -> "<<float(save1  )*100/(oldtree->GetEntries())<<"%\n";
+    cout<<"T2    saved: "<<save2   <<" -> "<<float(save2  )*100/(oldtree->GetEntries())<<"%\n";
+    cout<<"T1|T2 saved: "<<saveOR  <<" -> "<<float(saveOR )*100/(oldtree->GetEntries())<<"%\n";
+    cout<<"T1&t2 saved: "<<saveAND <<" -> "<<float(saveAND)*100/(oldtree->GetEntries())<<"%\n";
 
     //newtree->Draw("MuMuG_invMass");
     //newtree->Print();

@@ -17,11 +17,11 @@ class cutParams
 const double cutParams::massMuMuG_min  = 70;
 const double cutParams::massMuMuG_max  = 150;
 const double cutParams::massJPsi_diff  = 0.15;
-const double cutParams::muonPt0_min    = 25;
-const double cutParams::muonPt1_min    = 5;
+const double cutParams::muonPt0_min    = 20;
+const double cutParams::muonPt1_min    = 2;
 const double cutParams::photonPt_min   = 30;
 const double cutParams::JPsiGAngle_min = -1;
 const double cutParams::JPsiGAngle_max = 0.95;
 const double cutParams::MuMuAngle_min  = 0.90;
-const double cutParams::photonEta_max  = 2.8;
+const double cutParams::photonEta_max  = 2.9;
 const double cutParams::MuMuAngle_max  = 1;
