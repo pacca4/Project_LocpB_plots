@@ -118,6 +118,9 @@ double runToyModel(Int_t nbins=100) {
 
 	nll *= -1.0;
 
+
+	//cout << "Negative Log Likelihood: " << nll << endl;
+
 	delete f;
 	delete h;
 
