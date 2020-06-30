@@ -42,6 +42,22 @@ const double phi_Mu1_inf = 3.05;
 
 
 
+void test() {
+	RooRealVar MuMuG_invMass("MuMuG_invMass", "Reconstructed Mass", 0, 2, "[a.u.]]");
+	RooRealVar Lambda("LBkgComb", "combinatorial Bkg life, Left side", -1, "1/[a.u.]");
+
+	RooExponential ExpDecay("Exp Decay", "Exponential Decay", MuMuG_invMass, Lambda);
+
+	RooDataSet* data = ExpDecay.generate(MuMuG_invMass, 100000);
+	RooPlot* MuMuG_invMass_frame = MuMuG_invMass.frame();
+	data->plotOn(MuMuG_invMass_frame);
+	ExpDecay.plotOn(MuMuG_invMass_frame);
+
+	MuMuG_invMass_frame->Draw();
+}
+
+
+
 
 
 double runToyModel(Int_t nbins=100) {
@@ -99,29 +115,45 @@ double runToyModel(Int_t nbins=100) {
 	// MuMuG_invMass_frame->Draw();
 
 
-	TF1* f = new TF1("f","[0]*exp([1]*x)", 0, 2);
+	TF1* f_fit  = new TF1("f_fit",  "[0]*exp([1]*x)", 0, 2);
+	TF1* f_true = new TF1("f_true", "[0]*exp([1]*x)", 0, 2);
+
+	f_true->SetParameter(0, 200.0/(1.0 - 1.0/exp(2.0)));
+	f_true->SetParameter(1, -1.0);
+
 	// h->Draw();
-	h->Fit(f, "Q0");
+	h->Fit(f_fit, "Q0");
 
 
+	// n = numerator
+	// d = denominator
 	long x_o;
-	double x_e;
-	double nll = 0.;
-	double lfsa; // log factorial stirling approximation
-	for (int i=0; i<nbins; ++i) {
-		x_o = h->GetBinContent(i+1);
-		x_e = f->Eval(h->GetBinCenter(i+1));
-		lfsa = 0.5*log(2*M_PI*x_o) + x_o*log(x_o/exp(1.0));
+	double x_e_n;
+	double x_e_d;
+	double nll   = 0.;
+	// double nll_n = 0.;
+	// double nll_d = 0.;
+	// double lfsa  = 0.; // log factorial stirling approximation
 
-		nll += - x_e + x_o*log(x_e) - lfsa;
+	for (int i=0; i<nbins; ++i) {
+		x_o   = h->GetBinContent(i+1);
+		x_e_n = f_fit->Eval(h->GetBinCenter(i+1));
+		x_e_d = f_true->Eval(h->GetBinCenter(i+1));
+
+		// lfsa  = 0.5*log(2*M_PI*x_o) + x_o*log(x_o/exp(1.0));
+
+		nll  += (- x_e_n + x_e_d) + x_o*log(x_e_n/x_e_d);
+
+		// nll += - x_e + x_o*log(x_e) - lfsa;
 	}
 
-	nll *= -1.0;
+	nll *= -2.0;
 
 
 	//cout << "Negative Log Likelihood: " << nll << endl;
 
-	delete f;
+	delete f_fit;
+	delete f_true;
 	delete h;
 
 	return nll;
