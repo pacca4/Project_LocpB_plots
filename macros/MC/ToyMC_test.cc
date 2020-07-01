@@ -1,9 +1,13 @@
 #include "RooRealVar.h"
 #include "RooDataSet.h"
 #include "RooGaussian.h"
+#include "RooExponential.h"
+#include "RooAddPdf.h"
 #include "TCanvas.h"
 #include "RooPlot.h"
 #include "TAxis.h"
+#include "TH1.h"
+#include "TF1.h"
 
 #include <fstream>
 #include <iostream>
@@ -13,30 +17,6 @@
 //#include "util.h"
 
 using namespace RooFit ;
-
-
-EColor csig = kRed;
-EColor csi2 = kViolet;
-EColor cbkg = kGreen;
-EColor cmis = kOrange;
-
-// ************************************************************************** //
-// cuts
-// + MuMuG inv mass
-const double m_MuMuG_inf = 20.;
-const double m_MuMuG_sup = 150.;
-// + MuMu inv mass
-const double m_MuMu_inf = 3.05;
-const double m_MuMu_sup = 3.25;
-// + Mu[0] pt, eta, phi
-const double pt_Mu0_inf  = 3.05;
-const double eta_Mu0_inf = 3.05;
-const double phi_Mu0_inf = 3.05;
-// + Mu[1] pt, eta, phi
-const double pt_Mu1_inf  = 3.05;
-const double eta_Mu1_inf = 3.05;
-const double phi_Mu1_inf = 3.05;
-// ************************************************************************** //
 
 
 
@@ -72,10 +52,6 @@ double testRunToyModel(Int_t nbins=100) {
 	// model.plotOn(MuMuG_invMass_frame, Components(Signal),   LineStyle(ELineStyle::kDashed), LineColor(kRed));
 
 	// MuMuG_invMass_frame->Draw();
-
-	// cout << nsig.getVal() << endl;
-	// cout << nbkg.getVal() << endl;
-	// cout << h->GetEntries() << endl;
 	// ************************************************************************** //
 
 
@@ -96,21 +72,39 @@ double testRunToyModel(Int_t nbins=100) {
 	double norm_0 = (N_bkg/(N_bkg+N_sig)) * N_tot * bin_w;
 	double norm_1 = (N_sig/(N_bkg+N_sig)) * N_tot * bin_w;
 
+	// fixed parameters
 	f_num->FixParameter(0, norm_0);
 	f_num->FixParameter(3, 1.0);    // SM signal strength
 	f_num->FixParameter(4, norm_1);
+	// constrained parameters
+	// f_num->SetParLimits(2, -2.5, 0.0);
+	// f_num->SetParLimits(6,  0.0, 2.0);
+	// f_num->SetParLimits(7,  0.0, 1.0);
+	// parameters initialization
+	f_num->SetParameter(1,  1.0);
 	f_num->SetParameter(2, -1.0);
+	f_num->SetParameter(5,  4.0);
 	f_num->SetParameter(6,  1.0);
 	f_num->SetParameter(7,  0.1);
 
+	// fixed parameters
 	f_den->FixParameter(0, norm_0);
 	f_den->FixParameter(4, norm_1);
+	// constrained parameters
+	// f_den->SetParLimits(2, -2.5, 0.0);
+	// f_den->SetParLimits(6,  0.0, 2.0);
+	// f_den->SetParLimits(7,  0.0, 2.0);
+	// parameters initialization
+	f_den->SetParameter(1,  1.0);
 	f_den->SetParameter(2, -1.0);
 	f_den->SetParameter(3,  1.0); // SM signal strength
+	f_den->SetParameter(5,  4.0);
 	f_den->SetParameter(6,  1.0);
 	f_den->SetParameter(7,  0.1);
 
 	// h->Draw();
+	h->Fit(f_num, "LQ0");
+	h->Fit(f_den, "LQ0");
 	h->Fit(f_num, "LQ0");
 	h->Fit(f_den, "LQ0");
 	h->Fit(f_num, "LQ0");
@@ -123,27 +117,17 @@ double testRunToyModel(Int_t nbins=100) {
 	long x_o;
 	double x_e_n;
 	double x_e_d;
-	double nll   = 0.;
-	// double nll_n = 0.;
-	// double nll_d = 0.;
-	// double lfsa  = 0.; // log factorial stirling approximation
+	double nll = 0.;
 
 	for (int i=0; i<nbins; ++i) {
 		x_o   = h->GetBinContent(i+1);
 		x_e_n = f_num->Eval(h->GetBinCenter(i+1));
 		x_e_d = f_den->Eval(h->GetBinCenter(i+1));
 
-		// lfsa  = 0.5*log(2*M_PI*x_o) + x_o*log(x_o/exp(1.0));
-
 		nll  += (- x_e_n + x_e_d) + x_o*log(x_e_n/x_e_d);
-
-		// nll += - x_e + x_o*log(x_e) - lfsa;
 	}
 
 	nll *= -2.0;
-
-
-	//cout << "Negative Log Likelihood: " << nll << endl;
 
 	delete f_num;
 	delete f_den;
@@ -162,7 +146,7 @@ void testSampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, int 
 		nlls.push_back(testRunToyModel(nbins2));
 		if(i%patience==0){
 			std::cout << "Progress " << int(i*100.0/nsamples) << " %\r";
-    			std::cout.flush();
+			std::cout.flush();
 		}
 	}
 
