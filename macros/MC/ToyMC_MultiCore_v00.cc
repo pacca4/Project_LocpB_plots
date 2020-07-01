@@ -32,7 +32,7 @@ using namespace RooFit ;
 
 
 
-double testRunToyModel(Int_t nbins=100) {
+double runToyModel(Int_t nbins=100) {
 	// ************************************************************************** //
 	// True distribution
 	// ************************************************************************** //
@@ -152,40 +152,18 @@ double testRunToyModel(Int_t nbins=100) {
 
 
 
-void testSampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, int patience=10) {
-	vector<double> nlls(0);
-
-	for (int i=0; i<nsamples; ++i) {
-		nlls.push_back(testRunToyModel(nbins2));
-		if(i%patience==0){
-			std::cout << "Progress " << int(i*100.0/nsamples) << " %\r";
-			std::cout.flush();
-		}
-	}
-
-	double xmin = *min_element(nlls.begin(), nlls.end());
-	double xmax = *max_element(nlls.begin(), nlls.end());
-
-	TH1D* h = new TH1D("h", "h", nbins1, xmin, xmax);
-
-	for (int i=0; i<nsamples; ++i) {
-		h->Fill(nlls[i]);
-	}
-
-	h->Draw();
-}
-
 
 
 
 // ************************************************************************** //
 // Multi Thread experiments (not working at the moment)
 // ************************************************************************** //
-vector<double> anotherTestSampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, int patience=10) {
+vector<double> anotherSampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, int patience=10) {
+
 	vector<double> nlls(0);
 
 	for (int i=0; i<nsamples; ++i) {
-		nlls.push_back(testRunToyModel(nbins2));
+		nlls.push_back(runToyModel(nbins2));
 		if(i%patience==0){
 			std::cout << "Progress " << int(i*100.0/nsamples) << " %\r";
 			std::cout.flush();
@@ -202,23 +180,23 @@ vector<double> anotherTestSampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t
 // ************************************************************************** //
 // Multi Thread experiments (not working at the moment)
 // ************************************************************************** //
-void testMultiThreadingSampleNLL(Int_t nthreads=4, Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, int patience=10) {
+void multiThreadingSampleNLL(Int_t nthreads=4, Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, int patience=10) {
 
-	ROOT::EnableThreadSafety();
+	ROOT::EnableImplicitMT(1);
+
+	auto wi1 = ROOT::Experimental::Async(anotherSampleNLL, nsamples, nbins1, nbins2, patience);
+	auto wi2 = ROOT::Experimental::Async(anotherSampleNLL, nsamples, nbins1, nbins2, patience);
+	auto wi3 = ROOT::Experimental::Async(anotherSampleNLL, nsamples, nbins1, nbins2, patience);
+	auto wi4 = ROOT::Experimental::Async(anotherSampleNLL, nsamples, nbins1, nbins2, patience);
+	auto wi5 = ROOT::Experimental::Async(anotherSampleNLL, nsamples, nbins1, nbins2, patience);
+
+	vector<double> res1 = wi1.get();
+	vector<double> res2 = wi2.get();
+	vector<double> res3 = wi3.get();
+	vector<double> res4 = wi4.get();
+	vector<double> res5 = wi5.get();
+
 	vector<double> nlls(0);
-
-	auto f1 = std::async(anotherTestSampleNLL, nsamples, nbins1, nbins2, patience);
-	auto f2 = std::async(anotherTestSampleNLL, nsamples, nbins1, nbins2, patience);
-	auto f3 = std::async(anotherTestSampleNLL, nsamples, nbins1, nbins2, patience);
-	auto f4 = std::async(anotherTestSampleNLL, nsamples, nbins1, nbins2, patience);
-	auto f5 = std::async(anotherTestSampleNLL, nsamples, nbins1, nbins2, patience);
-
-	vector<double> res1 = f1.get();
-	vector<double> res2 = f2.get();
-	vector<double> res3 = f3.get();
-	vector<double> res4 = f4.get();
-	vector<double> res5 = f5.get();
-
 	nlls.insert(nlls.end(), res1.begin(), res1.end());
 	nlls.insert(nlls.end(), res2.begin(), res2.end());
 	nlls.insert(nlls.end(), res3.begin(), res3.end());
