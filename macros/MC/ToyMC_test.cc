@@ -103,14 +103,14 @@ double testRunToyModel(Int_t nbins=100) {
 	f_den->SetParameter(7,  0.1);
 
 	// h->Draw();
-	h->Fit(f_num, "LQ0");
-	h->Fit(f_den, "LQ0");
-	h->Fit(f_num, "LQ0");
-	h->Fit(f_den, "LQ0");
-	h->Fit(f_num, "LQ0");
-	h->Fit(f_den, "LQ0");
-	h->Fit(f_num, "LQ0");
-	h->Fit(f_den, "LQ0");
+	h->Fit(f_num, "LIQ0", "", 0.0, 2.0);
+	h->Fit(f_den, "LIQ0", "", 0.0, 2.0);
+	// h->Fit(f_num, "LQ0");
+	// h->Fit(f_den, "LQ0");
+	// h->Fit(f_num, "LQ0");
+	// h->Fit(f_den, "LQ0");
+	// h->Fit(f_num, "LQ0");
+	// h->Fit(f_den, "LQ0");
 
 	// n = numerator
 	// d = denominator
@@ -124,7 +124,10 @@ double testRunToyModel(Int_t nbins=100) {
 		x_e_n = f_num->Eval(h->GetBinCenter(i+1));
 		x_e_d = f_den->Eval(h->GetBinCenter(i+1));
 
-		nll  += (- x_e_n + x_e_d) + x_o*log(x_e_n/x_e_d);
+		// first approach
+		// nll  += (- x_e_n + x_e_d) + x_o*log(x_e_n/x_e_d);
+		// from: https://books.google.it/books?id=5-45DwAAQBAJ&pg=PA120&lpg=PA120&dq=toy+montecarlo+loglikelihood+ratio&source=bl&ots=4Xawe9iGBx&sig=ACfU3U1wmi1002ijZ9Teu2cBvS7rn46eKg&hl=it&sa=X&ved=2ahUKEwiE0Yz_uazqAhUVuHEKHd5cCGIQ6AEwA3oECAkQAQ#v=onepage&q=toy%20montecarlo%20loglikelihood%20ratio&f=false
+		nll  += (- x_e_n + x_o) + x_o*log(x_e_n/x_o);
 	}
 
 	nll *= -2.0;
