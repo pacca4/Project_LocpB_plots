@@ -15,16 +15,6 @@
 #include <iomanip>
 
 
-// ************************************************************************** //
-// Multi Thread experiments (not working at the moment)
-// ************************************************************************** //
-#include <thread>
-#include <future>
-#include "TROOT.h"
-#include "ROOT/TFuture.hxx"
-// ************************************************************************** //
-
-
 
 using namespace RooFit ;
 
@@ -55,16 +45,6 @@ double runToyModel(Int_t nbins=100) {
 	TH1* h = data->createHistogram("h", MuMuG_invMass, nbins);
 
 
-	// RooPlot* MuMuG_invMass_frame = MuMuG_invMass.frame();
-	// data->plotOn(MuMuG_invMass_frame);
-	// model.plotOn(MuMuG_invMass_frame);
-	// model.plotOn(MuMuG_invMass_frame, Components(ExpDecay), LineStyle(ELineStyle::kDashed));
-	// model.plotOn(MuMuG_invMass_frame, Components(Signal),   LineStyle(ELineStyle::kDashed), LineColor(kRed));
-
-	// MuMuG_invMass_frame->Draw();
-	// ************************************************************************** //
-
-
 	// ************************************************************************** //
 	// Toy test
 	// ************************************************************************** //
@@ -86,10 +66,6 @@ double runToyModel(Int_t nbins=100) {
 	f_num->FixParameter(0, norm_0);
 	f_num->FixParameter(3, 1.0);    // SM signal strength
 	f_num->FixParameter(4, norm_1);
-	// constrained parameters
-	// f_num->SetParLimits(2, -2.5, 0.0);
-	// f_num->SetParLimits(6,  0.0, 2.0);
-	// f_num->SetParLimits(7,  0.0, 1.0);
 	// parameters initialization
 	f_num->SetParameter(1,  1.0);
 	f_num->SetParameter(2, -1.0);
@@ -100,10 +76,6 @@ double runToyModel(Int_t nbins=100) {
 	// fixed parameters
 	f_den->FixParameter(0, norm_0);
 	f_den->FixParameter(4, norm_1);
-	// constrained parameters
-	// f_den->SetParLimits(2, -2.5, 0.0);
-	// f_den->SetParLimits(6,  0.0, 2.0);
-	// f_den->SetParLimits(7,  0.0, 2.0);
 	// parameters initialization
 	f_den->SetParameter(1,  1.0);
 	f_den->SetParameter(2, -1.0);
@@ -112,15 +84,8 @@ double runToyModel(Int_t nbins=100) {
 	f_den->SetParameter(6,  1.0);
 	f_den->SetParameter(7,  0.1);
 
-	// h->Draw();
 	h->Fit(f_num, "LIQ0", "", 0.0, 2.0);
 	h->Fit(f_den, "LIQ0", "", 0.0, 2.0);
-	// h->Fit(f_num, "LQ0");
-	// h->Fit(f_den, "LQ0");
-	// h->Fit(f_num, "LQ0");
-	// h->Fit(f_den, "LQ0");
-	// h->Fit(f_num, "LQ0");
-	// h->Fit(f_den, "LQ0");
 
 	// n = numerator
 	// d = denominator
@@ -152,66 +117,11 @@ double runToyModel(Int_t nbins=100) {
 
 
 
+void ToyMC_Batch_v00(Int_t batch_id, Int_t nsamples=1000, Int_t nbins=100) {
 
-
-
-// ************************************************************************** //
-// Multi Thread experiments (not working at the moment)
-// ************************************************************************** //
-vector<double> anotherSampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, int patience=10) {
-
-	vector<double> nlls(0);
+	ofstream ofile(Form("/home/rocco/University/LOCP/B/LOCP_modB_Project/macros/MC/batch_test/ToyMC_batch_%d.txt", batch_id));
 
 	for (int i=0; i<nsamples; ++i) {
-		nlls.push_back(runToyModel(nbins2));
-		if(i%patience==0){
-			std::cout << "Progress " << int(i*100.0/nsamples) << " %\r";
-			std::cout.flush();
-		}
+		ofile << runToyModel(nbins) << endl;
 	}
-
-	return nlls;
 }
-// ************************************************************************** //
-
-
-
-
-// ************************************************************************** //
-// Multi Thread experiments (not working at the moment)
-// ************************************************************************** //
-void multiThreadingSampleNLL(Int_t nthreads=4, Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, int patience=10) {
-
-	ROOT::EnableImplicitMT(5);
-
-	auto wi1 = ROOT::Experimental::Async(anotherSampleNLL, nsamples, nbins1, nbins2, patience);
-	auto wi2 = ROOT::Experimental::Async(anotherSampleNLL, nsamples, nbins1, nbins2, patience);
-	auto wi3 = ROOT::Experimental::Async(anotherSampleNLL, nsamples, nbins1, nbins2, patience);
-	auto wi4 = ROOT::Experimental::Async(anotherSampleNLL, nsamples, nbins1, nbins2, patience);
-	auto wi5 = ROOT::Experimental::Async(anotherSampleNLL, nsamples, nbins1, nbins2, patience);
-
-	vector<double> res1 = wi1.get();
-	vector<double> res2 = wi2.get();
-	vector<double> res3 = wi3.get();
-	vector<double> res4 = wi4.get();
-	vector<double> res5 = wi5.get();
-
-	vector<double> nlls(0);
-	nlls.insert(nlls.end(), res1.begin(), res1.end());
-	nlls.insert(nlls.end(), res2.begin(), res2.end());
-	nlls.insert(nlls.end(), res3.begin(), res3.end());
-	nlls.insert(nlls.end(), res4.begin(), res4.end());
-	nlls.insert(nlls.end(), res5.begin(), res5.end());
-
-	double xmin = *min_element(nlls.begin(), nlls.end());
-	double xmax = *max_element(nlls.begin(), nlls.end());
-
-	TH1D* h = new TH1D("h", "h", nbins1, xmin, xmax);
-
-	for (int i=0; i<nsamples; ++i) {
-		h->Fill(nlls[i]);
-	}
-
-	h->Draw();
-}
-// ************************************************************************** //
