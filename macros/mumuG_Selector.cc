@@ -38,19 +38,26 @@ void mumuG_Selector( const string& file,  const string& outfile ) {
     oldtree->SetBranchStatus("MuMu_invMass",1);
     oldtree->SetBranchStatus("MuMuG_invMass",1);
 
-    oldtree->SetBranchStatus("HLT_IsoMu27",1);
-    oldtree->SetBranchStatus("HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ",1);
+    oldtree->SetBranchStatus("HLT_Dimuon*",1);
+    oldtree->SetBranchStatus("HLT_DoubleMu*",1);
+    oldtree->SetBranchStatus("HLT_Mu*",1);
+    oldtree->SetBranchStatus("HLT_*Mu*",1);
 
-    //triggers
-    auto list = oldtree->GetListOfBranches();
-    if(list->Contains("HLT_Dimuon20_Jpsi")) oldtree->SetBranchStatus("HLT_Dimuon20_Jpsi",1);
-    if(list->Contains("HLT_DoubleMu0")) oldtree->SetBranchStatus("HLT_DoubleMu0",1);
-    if(list->Contains("HLT_Dimuon0er16_Jpsi_NoOS_NoVertexing")) oldtree->SetBranchStatus("HLT_Dimuon0er16_Jpsi_NoOS_NoVertexing",1);
-    if(list->Contains("HLT_Dimuon0er16_Jpsi_NoVertexing")) oldtree->SetBranchStatus("HLT_Dimuon0er16_Jpsi_NoVertexing",1);
-    if(list->Contains("HLT_Dimuon6_Jpsi_NoVertexing")) oldtree->SetBranchStatus("HLT_Dimuon6_Jpsi_NoVertexing",1);
-    if(list->Contains("HLT_DoubleMu18NoFiltersNoVtx")) oldtree->SetBranchStatus("HLT_DoubleMu18NoFiltersNoVtx",1);
-    if(list->Contains("HLT_Dimuon16_Jpsi")) oldtree->SetBranchStatus("HLT_Dimuon16_Jpsi",1);
-    if(list->Contains("HLT_Dimuon10_Jpsi_Barrel")) oldtree->SetBranchStatus("HLT_Dimuon10_Jpsi_Barrel",1);
+    
+
+//    oldtree->SetBranchStatus("HLT_IsoMu27",1);
+//    oldtree->SetBranchStatus("HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ",1);
+//
+//    //triggers
+//    auto list = oldtree->GetListOfBranches();
+//    if(list->Contains("HLT_Dimuon20_Jpsi")) oldtree->SetBranchStatus("HLT_Dimuon20_Jpsi",1);
+//    if(list->Contains("HLT_DoubleMu0")) oldtree->SetBranchStatus("HLT_DoubleMu0",1);
+//    if(list->Contains("HLT_Dimuon0er16_Jpsi_NoOS_NoVertexing")) oldtree->SetBranchStatus("HLT_Dimuon0er16_Jpsi_NoOS_NoVertexing",1);
+//    if(list->Contains("HLT_Dimuon0er16_Jpsi_NoVertexing")) oldtree->SetBranchStatus("HLT_Dimuon0er16_Jpsi_NoVertexing",1);
+//    if(list->Contains("HLT_Dimuon6_Jpsi_NoVertexing")) oldtree->SetBranchStatus("HLT_Dimuon6_Jpsi_NoVertexing",1);
+//    if(list->Contains("HLT_DoubleMu18NoFiltersNoVtx")) oldtree->SetBranchStatus("HLT_DoubleMu18NoFiltersNoVtx",1);
+//    if(list->Contains("HLT_Dimuon16_Jpsi")) oldtree->SetBranchStatus("HLT_Dimuon16_Jpsi",1);
+//    if(list->Contains("HLT_Dimuon10_Jpsi_Barrel")) oldtree->SetBranchStatus("HLT_Dimuon10_Jpsi_Barrel",1);
     
         //Create a new file + a clone of old tree in new file
     TFile *newfile = new TFile(("Selected_"+outfile+".root").c_str(),"recreate");
