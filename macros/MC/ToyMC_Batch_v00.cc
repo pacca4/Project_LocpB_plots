@@ -119,7 +119,7 @@ double runToyModel(Int_t nbins=100) {
 
 void ToyMC_Batch_v00(Int_t batch_id, Int_t nsamples=1000, Int_t nbins=100) {
 
-	ofstream ofile(Form("/lustre/cmswork/ardino/LOCP/LOCP_modB_Project/macros/MC/batch_test/ToyMC_batch_%d.txt", batch_id));
+	ofstream ofile(Form("/lustre/cmswork/ardino/LOCP/LOCP_modB_Project/macros/MC/batch_test_1/ToyMC_batch_%d.txt", batch_id));
 
 	for (int i=0; i<nsamples; ++i) {
 		ofile << runToyModel(nbins) << endl;
