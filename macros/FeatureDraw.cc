@@ -27,6 +27,9 @@ void DrawPad( const string& data_file,  const string& mc_file, const string& tre
     mc_h->SetLineWidth(3);      da_h->SetLineWidth(3);
     mc_h->Scale(double(da_tree->GetEntries())/mc_tree->GetEntries());
 
+    if (da_h->GetMaximum() < mc_h->GetMaximum())
+    	da_h->GetYaxis()->SetRangeUser(0, mc_h->GetMaximum());
+
     auto legend = new TLegend(0.5,0.8,0.6,0.9);
     legend->AddEntry(da_h, "data", "l");
     legend->AddEntry(mc_h, "MC",   "l");
@@ -63,6 +66,28 @@ void DrawCanvas( const string& data_file,  const string& mc_file,
 
 }
 
+
+void DrawAngularCanvas( const string& data_file,  const string& mc_file,  
+                 const string& feature, const string& constraint="" ){
+	//each angular quantity has 8 different branches
+	//with this function is possible to draw them all
+	TCanvas *c=new TCanvas ("c",feature.c_str(),1200,1200);
+	c->Divide(3,3);
+	c->SetTitle((feature+" Comparison").c_str());
+	c->cd(1); DrawPad(data_file, mc_file, "Events",feature+"_Mu0Mu1"  , constraint );
+	c->cd(2); DrawPad(data_file, mc_file, "Events",feature+"_Mu0Pht"  , constraint );
+	c->cd(3); DrawPad(data_file, mc_file, "Events",feature+"_Mu1Pht"  , constraint );
+	c->cd(4); DrawPad(data_file, mc_file, "Events",feature+"_JpsiPht" , constraint );
+	c->cd(5); DrawPad(data_file, mc_file, "Events",feature+"_RecoMu0" , constraint );
+	c->cd(6); DrawPad(data_file, mc_file, "Events",feature+"_RecoMu1" , constraint );
+	c->cd(7); DrawPad(data_file, mc_file, "Events",feature+"_RecoPht" , constraint );
+	c->cd(8); DrawPad(data_file, mc_file, "Events",feature+"_RecoJPsi", constraint );
+
+    gStyle->SetLineScalePS(1);
+    c->Print((feature+"_Comparison.pdf").c_str());
+    c->Print((feature+"_Comparison.png").c_str());                	
+}
+
 //str.erase(std::remove(str.begin(), str.end(), 'a'), str.end());
 
 
@@ -71,6 +96,16 @@ void FeatureDraw( const string& data_file,  const string& mc_file,
                   const string& feature,    const string& constraint="" ){          
     DrawCanvas(data_file, mc_file, feature, constraint);
 }
+
+
+void AngularDraw(const string& data_file,  const string& mc_file){
+	DrawAngularCanvas(data_file, mc_file, "DeltaR");
+	DrawAngularCanvas(data_file, mc_file, "DeltaRCM");
+	DrawAngularCanvas(data_file, mc_file, "DeltaPhiCM");
+	DrawAngularCanvas(data_file, mc_file, "AngleCM");
+}
+
+
 
 
 void DrawAllFeatures ( const string& data_file,  const string& mc_file){
@@ -84,6 +119,7 @@ void DrawAllFeatures ( const string& data_file,  const string& mc_file){
     FeatureDraw(data_file, mc_file, "Jpsi_eta[0]",  "");
     FeatureDraw(data_file, mc_file, "MuMu_invMass", "");
 
+	AngularDraw(data_file, mc_file);
 }
 
 
