@@ -1,0 +1,13 @@
+# this is a comment
+drop * # start with all
+#drop Electron*
+keep Muon*
+keep nMuon
+keep nPhoton
+#drop Jet*
+keep Photon*
+keep HLT_*
+keep SV*
+keep PV*
+keep MuMu*
+drop L1*

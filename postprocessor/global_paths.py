@@ -1,0 +1,6 @@
+MAINDIR = "/lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/mumu_analysis/"
+JSONDIR = MAINDIR + "filter_json/"
+FILESITE = "dcap://t2-srm-02.lnl.infn.it/pnfs/lnl.infn.it/data/cms/"
+OUTDIR = MAINDIR + "Skimmed"
+SKIMSITE = MAINDIR + "Skimmed/"
+SELSITE = MAINDIR + "Selected/"
