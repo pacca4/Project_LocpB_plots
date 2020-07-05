@@ -75,8 +75,8 @@ void drawSigBkgPDF(Int_t nbins=100) {
 
 
 	// --- Construct signal+background PDF --- //
-	RooRealVar nsig("nsig","#signal events",200, 0., 20000);
-	RooRealVar nbkg("nbkg","#background events",2000, 0., 20000);
+	RooRealVar nsig("nsig","#signal events", 200, 0., 20000);
+	RooRealVar nbkg("nbkg","#background events", 2000, 0., 20000);
 	RooAddPdf model("model","g+a",RooArgList(Signal,ExpDecay), RooArgList(nsig,nbkg));
 
 	RooDataSet* data = model.generate(MuMuG_invMass, 10000);
