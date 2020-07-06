@@ -12,7 +12,7 @@ echo "Submitting BatchMu $mu"
 /bin/cat <<EOM > $AUXFILE
 #BSUB -J ToyMC_BatchMu_v02
 cd ..
-root -l -b -q '../../../macros/MC/v02/ToyMC_Batch_v02.cc('$1', '$1', '$mu');'
+root -l -b -q '../../../macros/MC/v02/ToyMC_Batch_v02.cc('$1', '$2', '$mu');'
 EOM
 bsub -q "local-cms-long" < $AUXFILE
 done
