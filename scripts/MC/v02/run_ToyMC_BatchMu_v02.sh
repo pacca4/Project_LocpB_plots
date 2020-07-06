@@ -1,19 +1,18 @@
 #!/bin/bash
-# $1 = number of batches (one for every mu)
-# $2 = number of samples per batch
-# $3 = number of bins (for generate function)
-# $4 = starting mu
-# $5 = ending mu
-# $6 = mu step
+# $1 = number of samples per batch
+# $2 = number of bins (for generate function)
+# $3 = starting mu
+# $4 = ending mu
+# $5 = mu step
 export LC_NUMERIC="en_US.UTF-8"
 AUXFILE="auxFile.sh"
-for mu in $(seq $4 $5 $6)
+for mu in $(seq $3 $4 $5)
 do
 echo "Submitting BatchMu $mu"
 /bin/cat <<EOM > $AUXFILE
 #BSUB -J ToyMC_BatchMu_v02
 cd ..
-root -l -b -q '../../../macros/MC/v02/ToyMC_Batch_v02.cc('$2', '$3', '$mu');'
+root -l -b -q '../../../macros/MC/v02/ToyMC_Batch_v02.cc('$1', '$1', '$mu');'
 EOM
 bsub -q "local-cms-long" < $AUXFILE
 done
