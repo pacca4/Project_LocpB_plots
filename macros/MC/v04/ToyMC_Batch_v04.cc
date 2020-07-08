@@ -8,7 +8,6 @@
 #include "TAxis.h"
 #include "TH1.h"
 #include "TF1.h"
-#include "TLatex.h"
 
 #include <fstream>
 #include <iostream>
@@ -120,26 +119,12 @@ double runToyModel(Int_t nbins=100, Int_t nev=100000, Double_t mu=1.0) {
 	ToyMC_Model.fitTo(ToyMC_data, Verbose(kFALSE), PrintLevel(-1), PrintEvalErrors(-1), Warnings(kFALSE));
 
 	ToyMC_NSig.setVal(10*mu);
-
-	/*
-	RooPlot* ToyMC_Reco_mass_frame = ToyMC_Reco_mass.frame();
-	data->plotOn(ToyMC_Reco_mass_frame);
-	ToyMC_Model.plotOn(ToyMC_Reco_mass_frame);
-	ToyMC_Model.plotOn(ToyMC_Reco_mass_frame, Components(ToyMC_BkgModel), LineStyle(ELineStyle::kDashed));
-	ToyMC_Model.plotOn(ToyMC_Reco_mass_frame, Components(ToyMC_SigModel), LineStyle(ELineStyle::kDashed), LineColor(kRed));
-
-	ToyMC_Reco_mass_frame->Draw();
-	*/
 	// ************************************************************************** //
 
 
 	// ************************************************************************** //
 	// Toy test
 	// ************************************************************************** //
-	// Normalizations:
-	//		(#bkg/(#sig+#bkg))*((#events*binWidth)/(1-e^{-2}))
-	//		(#sig/(#sig+#bkg))*((#events*binWidth)/(~1))
-
 	// n = numerator
 	// d = denominator
 	double binw = h->GetBinWidth(1);
@@ -175,33 +160,15 @@ double runToyModel(Int_t nbins=100, Int_t nev=100000, Double_t mu=1.0) {
 
 
 
-void sampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, Int_t nev=100000, Int_t patience=10, Double_t mu=1.0) {
+void ToyMC_Batch_v04(Int_t batch_id, Int_t nsamples=1000, Int_t nbins=100, Int_t nev=100000, Double_t mu=1.0) {
 
 	RooMsgService::instance().setSilentMode(true);
 	RooMsgService::instance().setGlobalKillBelow(RooFit::WARNING);
 	RooMsgService::instance().setGlobalKillBelow(RooFit::FATAL);
-	vector<double> nlls(0);
+
+	ofstream ofile(Form("../../../macros/MC/sampling_tests/v04/Batch/ToyMC_Batch__nsamples_%d__nbins_%d__nev_%d__mu_%1.4f__%d.txt", nsamples, nbins, nev, mu, batch_id));
 
 	for (int i=0; i<nsamples; ++i) {
-		nlls.push_back(runToyModel(nbins2, nev, mu));
-		if(i%patience==0){
-			std::cout << "Progress " << int(i*100.0/nsamples) << " %\r";
-			std::cout.flush();
-		}
+		ofile << runToyModel(nbins, nev, mu) << endl;
 	}
-	std::cout << endl;
-
-	double xmin = *min_element(nlls.begin(), nlls.end());
-	double xmax = *max_element(nlls.begin(), nlls.end());
-
-	TH1D* h = new TH1D("h", "h", nbins1, xmin, xmax);
-
-	for (int i=0; i<nsamples; ++i) {
-		h->Fill(nlls[i]);
-	}
-
-	h->Draw();
-	TLatex MuonGang_label;
-	MuonGang_label.SetTextSize(0.03);
-	MuonGang_label.DrawLatexNDC(0.10, 0.91, "#it{MuonGang} collaboration^{#void1}");
 }

@@ -112,7 +112,7 @@ double runToyModel(Int_t nbins=100, Double_t mu=1.0) {
 
 void ToyMC_Batch_v02(Int_t batch_id, Int_t nsamples=1000, Int_t nbins=100, Double_t mu=1.0) {
 
-	ofstream ofile(Form("../../../macros/MC/sampling_tests/Batch/ToyMC_batch_%d.txt", batch_id));
+	ofstream ofile(Form("../../../macros/MC/sampling_tests/v02/Batch/ToyMC_batch_%d.txt", batch_id));
 
 	for (int i=0; i<nsamples; ++i) {
 		ofile << runToyModel(nbins, mu) << endl;
