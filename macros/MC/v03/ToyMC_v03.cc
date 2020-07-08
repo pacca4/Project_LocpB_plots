@@ -23,30 +23,71 @@ using namespace RooFit ;
 
 
 
+// P.S. : mu logic has to be modified
 double runToyModel(Int_t nbins=100, Double_t mu=1.0) {
 	// ************************************************************************** //
 	// True distribution
 	// ************************************************************************** //
-	RooRealVar MuMuG_invMass("MuMuG_invMass", "Reconstructed Mass", 70, 150, "[GeV]");
-	RooRealVar Lambda("LBkgComb", "combinatorial Bkg life, Left side", -1, "1/[a.u.]");
-	RooRealVar SigMean("SigMean","Signal mean", 1, "[a.u.]");
-	RooRealVar SigSD("SigSD","Signal s.d.", 0.1, "[a.u.]");
+	// RooRealVar    Reco_mass("Reco_mass", "m_{#mu#mu#gamma}",         70.0, 150.0,        "GeV");
+	// RooRealVar    BkgTau   ("BkgTau",    "Bkg Lifetime",              1.0,   0.0, 100.0, "GeV"); // 6.33972e+01
+	// RooRealVar    ResoMean ("ResoMean",  "Mass Resolution Mean",     50.0,  20.0, 150.0, "GeV"); // 7.52686e+01
+	// RooRealVar    ResoSigma("ResoSigma", "Mass Resolution Sigma",    10.0,   0.1, 100.0, "GeV"); // 1.04042e+01
+	RooRealVar    Reco_mass("Reco_mass", "m_{#mu#mu#gamma}",       70.0, 150.0,  "GeV");
+	RooRealVar    LBkgTau  ("LBkgTau",   "Left Bkg Lifetime",       6.33972e+01, "GeV"); // 6.33972e+01
+	RooRealVar    ResoMean ("ResoMean",  "Mass Resolution Mean",    7.52686e+01, "GeV"); // 7.52686e+01
+	RooRealVar    ResoSigma("ResoSigma", "Mass Resolution Sigma",   1.04042e+01, "GeV"); // 1.04042e+01
+	RooRealVar    SigMean  ("SigMean",   "Signal Mean",           125.0,         "GeV");
+	RooRealVar    SigSigma ("SigSigma",  "Signal Sigma",            1.5,         "GeV");
+	RooGaussModel ResoGauss("ResoGauss", "Mass Resolution Gaussian", Reco_mass, ResoMean, ResoSigma);
+	RooDecay      LBkgExpo ("LBkgExpo",  "Left Bkg Convolved Decay", Reco_mass, LBkgTau,  ResoGauss, RooDecay::SingleSided);
+	RooGaussian   Signal   ("SigGauss",  "Signal Gaussian",          Reco_mass, SigMean,  SigSigma);
 
-	RooExponential ExpDecay("Exp Decay", "Exponential Decay", MuMuG_invMass, Lambda);
+	// --- Construct signal+background PDF --- //
+	RooRealVar NSig("NSig",  "#Signal events",        10.);
+	RooRealVar NBkg("NBkg",  "#Background events",  2000.);
+	RooAddPdf Model("Model", "B+mu*S", RooArgList(Signal,LBkgExpo), RooArgList(NSig,NBkg));
 
-	RooGaussian Signal("signal","signal PDF", MuMuG_invMass, SigMean, SigSD);
+	RooDataSet* data = Model.generate(Reco_mass, 100000);
+	TH1* h = data->createHistogram("h", Reco_mass, nbins);
 	// ************************************************************************** //
 
-
 	// ************************************************************************** //
-	// Construct signal+background PDF
+	// Toy distribution
 	// ************************************************************************** //
-	RooRealVar nsig("nsig","#signal events",200, 0., 20000);
-	RooRealVar nbkg("nbkg","#background events",2000, 0., 20000);
-	RooAddPdf model("model","g+a",RooArgList(Signal,ExpDecay), RooArgList(nsig,nbkg));
+	// RooRealVar    Reco_mass("Reco_mass", "m_{#mu#mu#gamma}",         70.0, 150.0,        "GeV");
+	// RooRealVar    BkgTau   ("BkgTau",    "Bkg Lifetime",              1.0,   0.0, 100.0, "GeV"); // 6.33972e+01
+	// RooRealVar    ResoMean ("ResoMean",  "Mass Resolution Mean",     50.0,  20.0, 150.0, "GeV"); // 7.52686e+01
+	// RooRealVar    ResoSigma("ResoSigma", "Mass Resolution Sigma",    10.0,   0.1, 100.0, "GeV"); // 1.04042e+01
+	RooRealVar    ToyMC_Reco_mass("Reco_mass", "m_{#mu#mu#gamma}",       70.0, 150.0,               "GeV");
+	RooRealVar    ToyMC_LBkgTau  ("LBkgTau",   "Left Bkg Lifetime",       6.33972e+01,  50.,  100., "GeV"); // 6.33972e+01
+	RooRealVar    ToyMC_ResoMean ("ResoMean",  "Mass Resolution Mean",    7.52686e+01,  50.,  100., "GeV"); // 7.52686e+01
+	RooRealVar    ToyMC_ResoSigma("ResoSigma", "Mass Resolution Sigma",   1.04042e+01,   1.,   20., "GeV"); // 1.04042e+01
+	RooRealVar    ToyMC_SigMean  ("SigMean",   "Signal Mean",           125.0,         110.,  140., "GeV");
+	RooRealVar    ToyMC_SigSigma ("SigSigma",  "Signal Sigma",            1.5,           0.1,  10., "GeV");
+	RooGaussModel ToyMC_ResoGauss("ResoGauss", "Mass Resolution Gaussian", ToyMC_Reco_mass, ToyMC_ResoMean, ToyMC_ResoSigma);
+	RooDecay      ToyMC_LBkgExpo ("LBkgExpo",  "Left Bkg Convolved Decay", ToyMC_Reco_mass, ToyMC_LBkgTau,  ToyMC_ResoGauss, RooDecay::SingleSided);
+	RooGaussian   ToyMC_Signal   ("SigGauss",  "Signal Gaussian",          ToyMC_Reco_mass, ToyMC_SigMean,  ToyMC_SigSigma);
 
-	RooDataSet* data = model.generate(MuMuG_invMass, 10000);
-	TH1* h = data->createHistogram("h", MuMuG_invMass, nbins);
+	// --- Construct signal+background PDF --- //
+	RooRealVar ToyMC_NSig ("NSig",  "#Signal events",        10.);
+	RooRealVar ToyMC_NBkg ("NBkg",  "#Background events",  2000.);
+	RooAddPdf  ToyMC_Model("Model", "B+mu*S", RooArgList(ToyMC_Signal,ToyMC_LBkgExpo), RooArgList(ToyMC_NSig,ToyMC_NBkg));
+
+	RooDataHist ToyMC_data("ToyMC_data", "ToyMC Binned data", Reco_mass, h);
+
+	ToyMC_Model.fitTo(ToyMC_data);
+
+	ToyMC_NSig.setVal(10*mu);
+
+	/*
+	RooPlot* ToyMC_Reco_mass_frame = ToyMC_Reco_mass.frame();
+	data->plotOn(ToyMC_Reco_mass_frame);
+	ToyMC_Model.plotOn(ToyMC_Reco_mass_frame);
+	ToyMC_Model.plotOn(ToyMC_Reco_mass_frame, Components(ToyMC_LBkgExpo), LineStyle(ELineStyle::kDashed));
+	ToyMC_Model.plotOn(ToyMC_Reco_mass_frame, Components(ToyMC_Signal),   LineStyle(ELineStyle::kDashed), LineColor(kRed));
+
+	ToyMC_Reco_mass_frame->Draw();
+	*/
 	// ************************************************************************** //
 
 
@@ -56,52 +97,31 @@ double runToyModel(Int_t nbins=100, Double_t mu=1.0) {
 	// Normalizations:
 	//		(#bkg/(#sig+#bkg))*((#events*binWidth)/(1-e^{-2}))
 	//		(#sig/(#sig+#bkg))*((#events*binWidth)/(~1))
-	TF1* f_num = new TF1("f_fit",  "[0]*[1]*exp([2]*x) + [3]*[4]*gaus(5)", 0, 2);
-
-	double N_sig = nsig.getVal();
-	double N_bkg = nbkg.getVal();
-	double N_tot = h->GetEntries();
-	double bin_w = h->GetBinWidth(1);
-
-	double norm_0 = (N_bkg/(N_bkg+N_sig)) * N_tot * bin_w;
-	double norm_1 = (N_sig/(N_bkg+N_sig)) * N_tot * bin_w;
-
-	// fixed parameters
-	f_num->FixParameter(0, norm_0);
-	f_num->FixParameter(3, 1.0);     // SM signal strength
-	f_num->FixParameter(4, norm_1);
-	// parameters initialization
-	f_num->SetParameter(1,  1.0);
-	f_num->SetParameter(2, -1.0);
-	f_num->SetParameter(5,  4.0);
-	f_num->SetParameter(6,  1.0);
-	f_num->SetParameter(7,  0.1);
-
-	h->Fit(f_num, "LQ0", "", 0.0, 2.0);
-	// now fix the gaussian constant (to fix the normalization)
-	f_num->FixParameter(5, f_num->GetParameter(5));
-	// fix the signal strength
-	f_num->FixParameter(3, mu);
-	// fit again, with fixed parameters
-	h->Fit(f_num, "LQ0", "", 0.0, 2.0);
 
 	// n = numerator
 	// d = denominator
-	long x_o;
-	double x_e_n;
+	double x_o;
+	double N_o;
+	double N_e_n;
 	double nll = 0.;
 
+	RooArgSet obs(Reco_mass);
+
 	for (int i=0; i<nbins; ++i) {
-		x_o   = h->GetBinContent(i+1);
-		x_e_n = f_num->Eval(h->GetBinCenter(i+1));
+		x_o   = h->GetBinCenter(i+1);
+		N_o   = h->GetBinContent(i+1);
+
+		Reco_mass.setVal(x_o);
+
+		N_e_n = Model.getVal(&obs) * 80000.;
 
 		// from: https://books.google.it/books?id=5-45DwAAQBAJ&pg=PA120&lpg=PA120&dq=toy+montecarlo+loglikelihood+ratio&source=bl&ots=4Xawe9iGBx&sig=ACfU3U1wmi1002ijZ9Teu2cBvS7rn46eKg&hl=it&sa=X&ved=2ahUKEwiE0Yz_uazqAhUVuHEKHd5cCGIQ6AEwA3oECAkQAQ#v=onepage&q=toy%20montecarlo%20loglikelihood%20ratio&f=false
-		nll  += (- x_e_n + x_o) + x_o*log(x_e_n/x_o);
+		nll  += (- N_e_n + N_o) + N_o*log(N_e_n/N_o);
 	}
 
 	nll *= -2.0;
 
-	delete f_num;
+	delete data;
 	delete h;
 	// ************************************************************************** //
 
@@ -111,8 +131,12 @@ double runToyModel(Int_t nbins=100, Double_t mu=1.0) {
 
 
 
+
+
 void sampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, Int_t patience=10, Double_t mu=1.0) {
 
+	RooMsgService::instance().setSilentMode(true);
+	RooMsgService::instance().setGlobalKillBelow(RooFit::WARNING);
 	vector<double> nlls(0);
 
 	for (int i=0; i<nsamples; ++i) {

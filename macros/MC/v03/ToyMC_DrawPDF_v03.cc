@@ -3,11 +3,13 @@
 #include "RooGaussian.h"
 #include "RooExponential.h"
 #include "RooAddPdf.h"
+#include "RooNLLVar.h"
 #include "TCanvas.h"
 #include "RooPlot.h"
 #include "TAxis.h"
 #include "TH1.h"
 #include "TF1.h"
+#include "TF1Convolution.h"
 
 #include <fstream>
 #include <iostream>
@@ -25,7 +27,7 @@ using namespace RooFit ;
 // ************************************************************************** //
 // Draw theoretical distribution
 // ************************************************************************** //
-void drawSigBkgPDF(Int_t nbins=100) {
+void drawSigBkgPDF(Int_t nbins=100, Double_t mu=1.0) {
 	// ************************************************************************** //
 	// True distribution
 	// ************************************************************************** //
@@ -44,8 +46,8 @@ void drawSigBkgPDF(Int_t nbins=100) {
 	RooGaussian   Signal   ("SigGauss",  "Signal Gaussian",          Reco_mass, SigMean,  SigSigma);
 
 	// --- Construct signal+background PDF --- //
-	RooRealVar NSig("NSig",  "#Signal events",       10, 0., 20000);
-	RooRealVar NBkg("NBkg",  "#Background events", 2000, 0., 20000);
+	RooRealVar NSig("NSig",  "#Signal events",     10*mu);
+	RooRealVar NBkg("NBkg",  "#Background events",  2000);
 	RooAddPdf Model("Model", "B+mu*S", RooArgList(Signal,LBkgExpo), RooArgList(NSig,NBkg));
 
 	RooDataSet* data = Model.generate(Reco_mass, 100000);
@@ -58,5 +60,13 @@ void drawSigBkgPDF(Int_t nbins=100) {
 
 	Reco_mass_frame->Draw();
 	// ************************************************************************** //
+
+	// RooArgSet obs(Reco_mass);
+	// Reco_mass.setVal(125);
+	// cout << Model.getVal(&obs) << endl;
+	// Reco_mass.setVal(80);
+	// cout << Model.getVal(&obs) << endl;
+	// Reco_mass.setVal(90);
+	// cout << Model.getVal(&obs) << endl;
 }
 // ************************************************************************** //
