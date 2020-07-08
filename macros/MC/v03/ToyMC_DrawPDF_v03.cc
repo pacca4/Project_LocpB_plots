@@ -27,7 +27,7 @@ using namespace RooFit ;
 // ************************************************************************** //
 // Draw theoretical distribution
 // ************************************************************************** //
-void drawSigBkgPDF(Int_t nbins=100, Double_t mu=1.0) {
+void drawSigBkgPDF(Int_t nbins=100, Int_t nev=100000, Double_t mu=1.0) {
 	// ************************************************************************** //
 	// True distribution
 	// ************************************************************************** //
@@ -50,7 +50,9 @@ void drawSigBkgPDF(Int_t nbins=100, Double_t mu=1.0) {
 	RooRealVar NBkg("NBkg",  "#Background events",  2000);
 	RooAddPdf Model("Model", "B+mu*S", RooArgList(Signal,LBkgExpo), RooArgList(NSig,NBkg));
 
-	RooDataSet* data = Model.generate(Reco_mass, 100000);
+	RooDataSet* data = Model.generate(Reco_mass, nev);
+
+	Reco_mass.setBins(nbins);
 
 	RooPlot* Reco_mass_frame = Reco_mass.frame();
 	data->plotOn(Reco_mass_frame);
@@ -60,13 +62,5 @@ void drawSigBkgPDF(Int_t nbins=100, Double_t mu=1.0) {
 
 	Reco_mass_frame->Draw();
 	// ************************************************************************** //
-
-	// RooArgSet obs(Reco_mass);
-	// Reco_mass.setVal(125);
-	// cout << Model.getVal(&obs) << endl;
-	// Reco_mass.setVal(80);
-	// cout << Model.getVal(&obs) << endl;
-	// Reco_mass.setVal(90);
-	// cout << Model.getVal(&obs) << endl;
 }
 // ************************************************************************** //

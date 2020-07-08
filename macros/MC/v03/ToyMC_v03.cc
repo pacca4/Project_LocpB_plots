@@ -24,7 +24,7 @@ using namespace RooFit ;
 
 
 // P.S. : mu logic has to be modified
-double runToyModel(Int_t nbins=100, Double_t mu=1.0) {
+double runToyModel(Int_t nbins=100, Int_t nev=100000, Double_t mu=1.0) {
 	// ************************************************************************** //
 	// True distribution
 	// ************************************************************************** //
@@ -43,11 +43,13 @@ double runToyModel(Int_t nbins=100, Double_t mu=1.0) {
 	RooGaussian   Signal   ("SigGauss",  "Signal Gaussian",          Reco_mass, SigMean,  SigSigma);
 
 	// --- Construct signal+background PDF --- //
-	RooRealVar NSig("NSig",  "#Signal events",        10.);
-	RooRealVar NBkg("NBkg",  "#Background events",  2000.);
+	RooRealVar NSig("NSig",  "#Signal events",       10.);
+	RooRealVar NBkg("NBkg",  "#Background events", 2000.);
 	RooAddPdf Model("Model", "B+mu*S", RooArgList(Signal,LBkgExpo), RooArgList(NSig,NBkg));
 
-	RooDataSet* data = Model.generate(Reco_mass, 100000);
+	Reco_mass.setBins(nbins);
+
+	RooDataSet* data = Model.generate(Reco_mass, nev);
 	TH1* h = data->createHistogram("h", Reco_mass, nbins);
 	// ************************************************************************** //
 
@@ -100,6 +102,7 @@ double runToyModel(Int_t nbins=100, Double_t mu=1.0) {
 
 	// n = numerator
 	// d = denominator
+	double binw = h->GetBinWidth(1);
 	double x_o;
 	double N_o;
 	double N_e_n;
@@ -113,7 +116,7 @@ double runToyModel(Int_t nbins=100, Double_t mu=1.0) {
 
 		Reco_mass.setVal(x_o);
 
-		N_e_n = Model.getVal(&obs) * 80000.;
+		N_e_n = Model.getVal(&obs) * nev * binw;
 
 		// from: https://books.google.it/books?id=5-45DwAAQBAJ&pg=PA120&lpg=PA120&dq=toy+montecarlo+loglikelihood+ratio&source=bl&ots=4Xawe9iGBx&sig=ACfU3U1wmi1002ijZ9Teu2cBvS7rn46eKg&hl=it&sa=X&ved=2ahUKEwiE0Yz_uazqAhUVuHEKHd5cCGIQ6AEwA3oECAkQAQ#v=onepage&q=toy%20montecarlo%20loglikelihood%20ratio&f=false
 		nll  += (- N_e_n + N_o) + N_o*log(N_e_n/N_o);
@@ -133,14 +136,14 @@ double runToyModel(Int_t nbins=100, Double_t mu=1.0) {
 
 
 
-void sampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, Int_t patience=10, Double_t mu=1.0) {
+void sampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, Int_t nev=100000, Int_t patience=10, Double_t mu=1.0) {
 
 	RooMsgService::instance().setSilentMode(true);
 	RooMsgService::instance().setGlobalKillBelow(RooFit::WARNING);
 	vector<double> nlls(0);
 
 	for (int i=0; i<nsamples; ++i) {
-		nlls.push_back(runToyModel(nbins2, mu));
+		nlls.push_back(runToyModel(nbins2, nev, mu));
 		if(i%patience==0){
 			std::cout << "Progress " << int(i*100.0/nsamples) << " %\r";
 			std::cout.flush();
@@ -159,5 +162,5 @@ void sampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, Int_t pa
 	h->Draw();
 	TLatex MuonGang_label;
 	MuonGang_label.SetTextSize(0.03);
-	MuonGang_label.DrawLatexNDC(0.10, 0.91, "#it{MuonGang} collaboration");
+	MuonGang_label.DrawLatexNDC(0.10, 0.91, "#it{MuonGang} collaboration^{#void1}");
 }
