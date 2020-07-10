@@ -8,6 +8,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <iomanip>
+#include "RooBukinPdf.h"
 
 using namespace RooFit ;
 
@@ -41,9 +42,9 @@ void Hfit_2G_CB (const string& file, double xmin=70, double xmax=150 , int nbin=
 
     
     RooRealVar rmass (  "rmass",   "Invariant  Mass",   mass,   xmin,  xmax, "GeV" );
-    RooRealVar widt1( "widt1", "Mass Widt1",  2,  0.001, sigma1*10, "GeV" );
-    RooRealVar widt2( "widt2", "Mass Widt2",  4,  0.001, sigma2*10, "GeV" ); 
-    RooRealVar widt3( "widt3", "Mass Widt3", 24,  0.001, sigma3*10, "GeV" ); 
+    RooRealVar widt1( "widt1", "Mass Widt1", 1.3,  0.001, sigma1*10, "GeV" );
+    RooRealVar widt2( "widt2", "Mass Widt2",   4,  0.001, sigma2*10, "GeV" ); 
+    RooRealVar widt3( "widt3", "Mass Widt3",  24,  0.001, sigma3*10, "GeV" ); 
 
     RooRealVar gfrac1   ( "gfrac1", "signal fraction1", signalFrac , 0.0, 1.0 );
     RooRealVar gfrac2   ( "gfrac2", "signal fraction2", signalFrac , 0.0, 1.0 );
@@ -54,8 +55,8 @@ void Hfit_2G_CB (const string& file, double xmin=70, double xmax=150 , int nbin=
 
     RooAddPdf GaussSum ( "GaussSum", "Signal"  , RooArgList( gauss1, gauss2, gauss3), 
                                                  RooArgList( gfrac1, gfrac2 ));
-    //RooAddPdf GaussSum ( "GaussSum", "Signal"  , RooArgList( gauss1, gauss2), 
-    //                                             RooArgList( gfrac1 ));
+   // RooAddPdf GaussSum ( "GaussSum", "Signal"  , RooArgList( gauss1, gauss2), 
+   //                                              RooArgList( gfrac1 ));
 
 
 
@@ -81,6 +82,15 @@ void Hfit_2G_CB (const string& file, double xmin=70, double xmax=150 , int nbin=
 
     RooAddPdf  model12  ( "model12", "Signal ", RooArgList(GaussSum, CBBkg), BFrac );
  
+    RooRealVar Buk_Xp    ("Buk_Xp  ", "Buk_Xp  ",   125, 110, 140);
+    RooRealVar Buk_sigp  ("Buk_sigp", "Buk_sigp",    15,   0,  40); 
+    RooRealVar Buk_xi    ("Buk_xi  ", "Buk_xi  ",  -0.2, -10,  10); 
+    RooRealVar Buk_rho1  ("Buk_rho1", "Buk_rho1", -0.06,  -1,   1);
+    RooRealVar Buk_rho2  ("Buk_rho2", "Buk_rho2",  0.13,  -1,   1); 
+
+    RooBukinPdf Buk("Buk", "Buk", Reco_mass, Buk_Xp  ,Buk_sigp,Buk_xi  ,Buk_rho1,Buk_rho2);
+   // RooAddPdf  model12  ( "model12", "Signal ", RooArgList(GaussSum, Buk), BFrac );
+
     cout<<"ok\n";
 
     model12.fitTo( data ); 
@@ -100,11 +110,32 @@ void Hfit_2G_CB (const string& file, double xmin=70, double xmax=150 , int nbin=
 
     data.plotOn( h_frame );
     model12.plotOn( h_frame );
-    model12.plotOn( h_frame, Components( "CBBkg" ),  LineStyle( kDashed ), LineColor( kGreen ) );
+  //  model12.plotOn( h_frame, Components( "CBBkg" ),  LineStyle( kDashed ), LineColor( kGreen ) );
     model12.plotOn( h_frame, Components( "GaussSum"),LineStyle( kDashed ), LineColor( csig ) );
-   // model12.plotOn( h_frame, Components( "gauss1"),LineStyle( kDashed ), LineColor( kOrange ) );
-   // model12.plotOn( mfrtmp, Components( "gauss2"),LineStyle( kDashed ), LineColor( kGreen ) );
+    model12.plotOn( h_frame, Components( "gauss1"),LineStyle( kDashed ), LineColor( kOrange ) );
+    model12.plotOn( h_frame, Components( "Buk"),LineStyle( kDashed ), LineColor( kGreen ) );
   h_frame->Draw();
+   
+   RooHist* hresid = h_frame->residHist("h_ToyMC_data", "model12_Norm[Reco_mass]", true) ;
+ 
+    // Construct a histogram with the pulls of the data w.r.t the curve
+ 
+    // Create a new frame to draw the residual distribution and add the distribution to the frame
+    RooPlot* frame2 = Reco_mass.frame(Title("Residual Distribution")) ;
+    frame2->addPlotable(hresid,"P") ;
+
+
+   TCanvas* c2 = new TCanvas( "c2",outname.c_str(), 800, 600 );
+   c2->cd();
+  frame2->Draw();
+  //  c1->SetLeftMargin( 0.15 );
+  //  c1->cd();
+  //  RooPlot* r_frame = Reco_mass.frame();
+  //  res->Draw();
+  //  r_frame->Draw();
+   
+   
+   
     cout << "dframe objects:\n";
   for (int i=0; i<h_frame->numItems(); i++) {
     TString obj_name=h_frame->nameOf(i); if (obj_name=="") continue;
@@ -135,6 +166,21 @@ TString mnames[] = {
   }
   mleg->Draw("same");
 */
+
+
+cout<<"***********\n\n";
+cout<<"rmass  "<<rmass.getVal()<<endl;
+cout<<"width1 "<<widt1.getVal()<<endl;
+cout<<"width2 "<<widt2.getVal()<<endl;
+cout<<"width3 "<<widt3.getVal()<<endl;
+cout<<"gfrac1 "<<gfrac1.getVal()<<endl;
+cout<<"gfrac2 "<<gfrac2.getVal()<<endl;
+
+cout<<"sigma "<<sigma.getVal()<<endl;
+cout<<"n     "<<    n.getVal()<<endl;
+cout<<"alpha "<<alpha.getVal()<<endl;
+cout<<"BFrac "<<BFrac.getVal()<<endl; 
+
 
   c1->Print("Hfit_2G_CB.pdf");
 }
