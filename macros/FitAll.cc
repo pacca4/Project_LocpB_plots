@@ -220,8 +220,8 @@ void SigFitIsoTrk  ( const string& file, int nbin=80){
     h_frame->Draw();
    
     c1->Print("RecoMassSignal_IsoTrk.pdf");
+    
 }
-
 
 void FitAll(int nbin=80){
     DataFitIsoMu ("Final_DataIsoMu.root"   , nbin);
