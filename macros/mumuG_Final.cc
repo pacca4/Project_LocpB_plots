@@ -18,6 +18,8 @@
 //root -l -b '../../fitModelRQ_v15.cc (" ", ...); exit(0)'
 
 
+
+
 /*
 .x mumuG_Final.cc("Total_Cutted.root", "Data", "IsoMu")
 Total saved: 20918 -> 32.9713%
@@ -28,14 +30,19 @@ Total saved: 5901 -> 43.7241%
 .x mumuG_Final.cc("Total_Cutted.root", "Data", "2MuPh")
 Total saved: 81969 -> 48.789%
 
+Initial signal events ( before all) -> 293832
+
 .x mumuG_Final.cc("Cutted_Signal.root", "Signal", "IsoMu")
 Total saved: 61180 -> 69.4675%
+Total efficiency -> 20.8 %
 
 .x mumuG_Final.cc("Cutted_Signal.root", "Signal", "IsoTrk")
 Total saved: 55709 -> 69.4591%
+Total efficiency -> 18.9 %
 
 .x mumuG_Final.cc("Cutted_Signal.root", "Signal", "2MuPh")
 Total saved: 87656 -> 68.36%
+totoal efficiecy -> 29.8%
 
 */
 
