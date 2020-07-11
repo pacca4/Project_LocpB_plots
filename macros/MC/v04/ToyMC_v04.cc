@@ -203,5 +203,5 @@ void sampleNLL(Int_t nsamples=1000, Int_t nbins1=100, Int_t nbins2=100, Int_t ne
 	h->Draw();
 	TLatex MuonGang_label;
 	MuonGang_label.SetTextSize(0.03);
-	MuonGang_label.DrawLatexNDC(0.10, 0.91, "#it{MuonGang} collaboration^{#void1}");
+	MuonGang_label.DrawLatexNDC(0.10, 0.91, "#it{MuonGang} collaboration");
 }
