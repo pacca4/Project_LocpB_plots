@@ -86,8 +86,8 @@ void DrawAngularCanvas( const string& data_file,  const string& mc_file, const s
 	c->cd(8); DrawPad(data_file, mc_file, tree, feature+"_RecoJPsi", constraint );
 
     gStyle->SetLineScalePS(1);
-    c->Print((feature+"_Comparison.pdf").c_str());
-    c->Print((feature+"_Comparison.png").c_str());                	
+    c->Print((tree+feature+"_Comparison.pdf").c_str());
+    c->Print((tree+feature+"_Comparison.png").c_str());                	
 }
 
 //str.erase(std::remove(str.begin(), str.end(), 'a'), str.end());
@@ -111,10 +111,10 @@ void AngularDraw(const string& data_file,  const string& mc_file){
 	DrawAngularCanvas(data_file, mc_file, "Events_IsoTrk", "DeltaPhiCM");
 	DrawAngularCanvas(data_file, mc_file, "Events_IsoTrk", "AngleCM");
 
-    DrawAngularCanvas(data_file, mc_file, "Events_2MuPh" , "DeltaR");
-	DrawAngularCanvas(data_file, mc_file, "Events_2MuPh" , "DeltaRCM");
-	DrawAngularCanvas(data_file, mc_file, "Events_2MuPh" , "DeltaPhiCM");
-	DrawAngularCanvas(data_file, mc_file, "Events_2MuPh" , "AngleCM");
+    //DrawAngularCanvas(data_file, mc_file, "Events_2MuPh" , "DeltaR");
+	//DrawAngularCanvas(data_file, mc_file, "Events_2MuPh" , "DeltaRCM");
+	//DrawAngularCanvas(data_file, mc_file, "Events_2MuPh" , "DeltaPhiCM");
+	//DrawAngularCanvas(data_file, mc_file, "Events_2MuPh" , "AngleCM");
 }
 
 
