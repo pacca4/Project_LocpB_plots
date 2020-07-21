@@ -13,7 +13,13 @@ using namespace std;
 void PadDraw( const string& data_file,  const string& mc_file, const string& tree, 
               const string& feature,    const string& constraint="", const string& outname="",
               const string& xlab="",  const string& ylab="", const string& title="" ){
-    
+
+    string feat = feature;
+    feat.erase(std::remove(feat.begin(), feat.end(), '['), feat.end());
+    feat.erase(std::remove(feat.begin(), feat.end(), ']'), feat.end());
+    feat.erase(std::remove(feat.begin(), feat.end(), '/'), feat.end());
+
+
     TFile* dafile = new TFile(data_file.c_str());
     TFile* mcfile = new TFile(  mc_file.c_str());
 
@@ -36,7 +42,7 @@ void PadDraw( const string& data_file,  const string& mc_file, const string& tre
     if (da_h->GetMaximum() < mc_h->GetMaximum())
     	da_h->GetYaxis()->SetRangeUser(0, mc_h->GetMaximum());
 
-    auto legend = new TLegend(0.3,0.8,0.4,0.9);
+    auto legend = new TLegend(0.5,0.8,0.6,0.9);
     legend->AddEntry(da_h, "data", "l");
     legend->AddEntry(mc_h, "MC",   "l");
     legend->Draw();
@@ -47,8 +53,8 @@ void PadDraw( const string& data_file,  const string& mc_file, const string& tre
     if (ylab!="")     hist->GetYaxis()->SetTitle((ylab).c_str());
     gStyle->SetTitleYOffset(0.8);
 
-    c1->Print((feature+outname+".png").c_str());
-    c1->Print((feature+outname+".pdf").c_str());
+    c1->Print((feat+outname+".png").c_str());
+    c1->Print((feat+outname+".pdf").c_str());
 
     //da_h->Draw();
     //mc_h->Draw();
