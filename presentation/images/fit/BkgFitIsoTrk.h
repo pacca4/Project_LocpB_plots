@@ -23,7 +23,7 @@ void BkgFitIsoTrk (const string& file, double xmin=70, double xmax=150 , int nbi
                 double sigma1=1, double sigma2=4, double sigma3=20,
                 double signalFrac=0.5 , double bkg_frac=0.5){
 
-    RooRealVar Reco_mass( "Reco_mass", "Reconstructed Mass",    xmin, xmax, "GeV" );
+    RooRealVar Reco_mass( "Reco_mass", "Reconstructed Mass",    xmin, xmax, "Gev/c^{2}" );
     TFile *f=new TFile(file.c_str(), "READ");
     TTree* EvTree = (TTree*)f->Get("Events_IsoTrk");
 
@@ -38,7 +38,7 @@ void BkgFitIsoTrk (const string& file, double xmin=70, double xmax=150 , int nbi
     Reco_mass.setRange("highMass", 130, 150);
     Reco_mass.setRange("signal",   120, 130);
 
-    RooRealVar     IsoTrk_tau ( "IsoTrk_tau", "IsoTrk_tau" , -0.0302445, -1, 0., "GeV");
+    RooRealVar     IsoTrk_tau ( "IsoTrk_tau", "IsoTrk_tau" , -0.0302445, -1, 0., "Gev/c^{2}");
     RooExponential IsoTrk_exp ( "IsoTrk_exp", "IsoTrk_exp" ,   Reco_mass, IsoTrk_tau);//, ResoGauss, RooDecay::SingleSided );
 
     IsoTrk_exp.fitTo(*CutData , Range("lowMass,highMass") );

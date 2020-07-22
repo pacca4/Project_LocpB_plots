@@ -23,7 +23,7 @@ void BkgFitIsoMu (const string& file, double xmin=70, double xmax=150 , int nbin
                 double sigma1=1, double sigma2=4, double sigma3=20,
                 double signalFrac=0.5 , double bkg_frac=0.5){
 
-    RooRealVar Reco_mass( "Reco_mass", "Reconstructed Mass",    xmin, xmax, "GeV" );
+    RooRealVar Reco_mass( "Reco_mass", "Reconstructed Mass",    xmin, xmax, "Gev/c^{2}" );
     TFile *f=new TFile(file.c_str(), "READ");
     TTree* EvTree = (TTree*)f->Get("Events_IsoMu");
 
@@ -38,8 +38,8 @@ void BkgFitIsoMu (const string& file, double xmin=70, double xmax=150 , int nbin
     Reco_mass.setRange("highMass", 130, 150);
     Reco_mass.setRange("signal",   120, 130);
 
-    RooRealVar IsoMu_coef1( "IsoMu_coef1", "IsoMu_coef1"  , -0.0104791, -0.1, 0.1, "GeV^-1" );
-    RooRealVar IsoMu_coef2( "IsoMu_coef2", "IsoMu_coef2"  , 2.92647e-05,  -0.001,  0.01, "GeV^-2" );
+    RooRealVar IsoMu_coef1( "IsoMu_coef1", "IsoMu_coef1"  , -0.0104791, -0.1, 0.1, "Gev/c^{2}^-1" );
+    RooRealVar IsoMu_coef2( "IsoMu_coef2", "IsoMu_coef2"  , 2.92647e-05,  -0.001,  0.01, "Gev/c^{2}^-2" );
 
     RooPolynomial IsoMu_polyn ( "IsoMu_polyn", "IsoMu_polyn",
                  Reco_mass, RooArgList( IsoMu_coef1, IsoMu_coef2 ) );

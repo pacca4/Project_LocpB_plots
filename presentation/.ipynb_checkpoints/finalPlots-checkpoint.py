@@ -23,14 +23,14 @@ def plot_hists(nb, idx, upper=300):
     plt.axvline(med1-2*sig1, c='r', ls='--')
     
     
-def significance( nb, idx, upper=120):
+def significance( nb, idx, upper=120, ndf=38):
     h1, e1 = np.histogram(data_AllMu[idx], bins=nb, range=(0,upper))
     med1 = np.median(data_AllMu[idx])
-    pObs = 1-stats.chi2.cdf(med1, 38)
+    pObs = 1-stats.chi2.cdf(med1, ndf)
     sigObs = math.sqrt(2)*erfinv(1-pObs)
     return pObs, sigObs
     
-def sub_plot_hists(ax, nb, idx, upper=120):
+def sub_plot_hists(ax, nb, idx, ndf=38, upper=120):
     h0, e0 = np.histogram(data_AllMu[0]  , bins=nb, range=(0,upper), density=True)
     h1, e1 = np.histogram(data_AllMu[idx], bins=nb, range=(0,upper), density=True)
     med1 = np.median(data_AllMu[idx])
@@ -42,7 +42,7 @@ def sub_plot_hists(ax, nb, idx, upper=120):
     ax.set_title("Distribution for $\mu=$"+str(mus[idx]))
     ax.set_xlabel("q($\mu$)")
     ax.set_ylabel("Density")
-    ax.text(0.85,0.6,   "$p_{obs}$= "+str(round(pObs,3))+ "\n$\sigma_{obs}$=                    "+str(round(sigObs,3)), size=12, ha="center", transform=ax.transAxes)
+    ax.text(0.85,0.6,   "$p_{med}$= "+str(round(pObs,3))+ "\n$\sigma_{med}$= "+str(round(sigObs,3)), size=12, ha="center", transform=ax.transAxes)
     
 def plot_all_distr_isoTrk(sigs, h_mu):
     fig, axs = plt.subplots(1,2, figsize=(18,6))

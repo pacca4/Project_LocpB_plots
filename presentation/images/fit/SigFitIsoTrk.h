@@ -23,7 +23,7 @@ void SigFitIsoTrk (const string& file, double xmin=115, double xmax=135 , int nb
                 double sigma1=1, double sigma2=4, double sigma3=20,
                 double signalFrac=0.5 , double bkg_frac=0.5){
 
-    RooRealVar Reco_mass( "Reco_mass", "Reconstructed Mass",    xmin, xmax, "GeV" );
+    RooRealVar Reco_mass( "Reco_mass", "Reconstructed Mass",    xmin, xmax, "Gev/c^{2}" );
     TFile *f=new TFile(file.c_str(), "READ");
     TTree* EvTree = (TTree*)f->Get("Events_IsoTrk");
 
@@ -32,10 +32,10 @@ void SigFitIsoTrk (const string& file, double xmin=115, double xmax=135 , int nb
     RooDataHist data("ToyMC_data", "ToyMC Binned data", Reco_mass, h);
 
 
-    RooRealVar  IsoTrk_mean   ( "IsoTrk_mean", "IsoTrk_mean",   124.793,   120,  130, "GeV" );
-    RooRealVar  IsoTrk_sig1   ( "IsoTrk_sig1", "IsoTrk_sig1",  0.733419,   0.01,  10, "GeV" );
-    RooRealVar  IsoTrk_sig2   ( "IsoTrk_sig2", "IsoTrk_sig2",   2.48086,   0.01,  10, "GeV" );
-    RooRealVar  IsoTrk_sig3   ( "IsoTrk_sig3", "IsoTrk_sig3",   11.2167,      1, 100, "GeV" );
+    RooRealVar  IsoTrk_mean   ( "IsoTrk_mean", "IsoTrk_mean",   124.793,   120,  130, "Gev/c^{2}" );
+    RooRealVar  IsoTrk_sig1   ( "IsoTrk_sig1", "IsoTrk_sig1",  0.733419,   0.01,  10, "Gev/c^{2}" );
+    RooRealVar  IsoTrk_sig2   ( "IsoTrk_sig2", "IsoTrk_sig2",   2.48086,   0.01,  10, "Gev/c^{2}" );
+    RooRealVar  IsoTrk_sig3   ( "IsoTrk_sig3", "IsoTrk_sig3",   11.2167,      1, 100, "Gev/c^{2}" );
     
     RooRealVar  IsoTrk_gfrac1 ( "IsoTrk_gfrac1", "IsoTrk_gfrac1", 0.263134,  0.0, 1.0 );
     RooRealVar  IsoTrk_gfrac2 ( "IsoTrk_gfrac2", "IsoTrk_gfrac2", 0.698942,  0.0, 1.0 );
@@ -48,9 +48,9 @@ void SigFitIsoTrk (const string& file, double xmin=115, double xmax=135 , int nb
                                     RooArgList( IsoTrk_gauss1, IsoTrk_gauss2, IsoTrk_gauss3),
                                     RooArgList( IsoTrk_gfrac1, IsoTrk_gfrac2 ));
     
-    RooRealVar IsoTrk_CBSig   ("IsoTrk_CBSig"  , "IsoTrk_CBSig"  , 1.41684, 0.1, 10, "Gev");
-    RooRealVar IsoTrk_CBn     ("IsoTrk_CBn"    , "IsoTrk_CBn"    , 1.79598, 0, 10, "Gev");
-    RooRealVar IsoTrk_CBalpha ("IsoTrk_CBalpha", "IsoTrk_CBalpha", 1.66116, 0, 3, "Gev");
+    RooRealVar IsoTrk_CBSig   ("IsoTrk_CBSig"  , "IsoTrk_CBSig"  , 1.41684, 0.1, 10, "Gev/c^{2}");
+    RooRealVar IsoTrk_CBn     ("IsoTrk_CBn"    , "IsoTrk_CBn"    , 1.79598, 0, 10, "Gev/c^{2}");
+    RooRealVar IsoTrk_CBalpha ("IsoTrk_CBalpha", "IsoTrk_CBalpha", 1.66116, 0, 3, "Gev/c^{2}");
     RooCBShape IsoTrk_CB ("IsoTrk_CB", "IsoTrk_CB", Reco_mass ,
                              IsoTrk_mean, IsoTrk_CBSig  ,
                              IsoTrk_CBn , IsoTrk_CBalpha); 

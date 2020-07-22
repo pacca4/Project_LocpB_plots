@@ -25,7 +25,7 @@ void SigFitIsoMu (const string& file, double xmin=115, double xmax=135 , int nbi
                 double sigma1=1, double sigma2=4, double sigma3=20,
                 double signalFrac=0.5 , double bkg_frac=0.5){
 
-    RooRealVar Reco_mass( "Reco_mass", "Reconstructed Mass",    xmin, xmax, "GeV" );
+    RooRealVar Reco_mass( "Reco_mass", "Reconstructed Mass",    xmin, xmax, "Gev/c^{2}" );
     TFile *f=new TFile(file.c_str(), "READ");
     TTree* EvTree = (TTree*)f->Get("Events_IsoMu");
 
@@ -34,10 +34,10 @@ void SigFitIsoMu (const string& file, double xmin=115, double xmax=135 , int nbi
     RooDataHist data("ToyMC_data", "ToyMC Binned data", Reco_mass, h);
 
 
-    RooRealVar  IsoMu_mean   ( "IsoMu_mean", "IsoMu_mean",   124.793,   120,  130, "GeV" );
-    RooRealVar  IsoMu_sig1   ( "IsoMu_sig1", "IsoMu_sig1",  0.733419,   0.01,  10, "GeV" );
-    RooRealVar  IsoMu_sig2   ( "IsoMu_sig2", "IsoMu_sig2",   2.48086,   0.01,  10, "GeV" );
-    RooRealVar  IsoMu_sig3   ( "IsoMu_sig3", "IsoMu_sig3",   11.2167,      1, 100, "GeV" );
+    RooRealVar  IsoMu_mean   ( "IsoMu_mean", "IsoMu_mean",   124.793,   120,  130, "Gev/c^{2}" );
+    RooRealVar  IsoMu_sig1   ( "IsoMu_sig1", "IsoMu_sig1",  0.733419,   0.01,  10, "Gev/c^{2}" );
+    RooRealVar  IsoMu_sig2   ( "IsoMu_sig2", "IsoMu_sig2",   2.48086,   0.01,  10, "Gev/c^{2}" );
+    RooRealVar  IsoMu_sig3   ( "IsoMu_sig3", "IsoMu_sig3",   11.2167,      1, 100, "Gev/c^{2}" );
     
     RooRealVar  IsoMu_gfrac1 ( "IsoMu_gfrac1", "IsoMu_gfrac1", 0.263134,  0.0, 1.0 );
     RooRealVar  IsoMu_gfrac2 ( "IsoMu_gfrac2", "IsoMu_gfrac2", 0.698942,  0.0, 1.0 );
@@ -50,9 +50,9 @@ void SigFitIsoMu (const string& file, double xmin=115, double xmax=135 , int nbi
                                     RooArgList( IsoMu_gauss1, IsoMu_gauss2, IsoMu_gauss3),
                                     RooArgList( IsoMu_gfrac1, IsoMu_gfrac2 ));
     
-    RooRealVar IsoMu_CBSig   ("IsoMu_CBSig"  , "IsoMu_CBSig"  , 1.41684, 0.1, 10, "Gev");
-    RooRealVar IsoMu_CBn     ("IsoMu_CBn"    , "IsoMu_CBn"    , 1.79598, 0, 10, "Gev");
-    RooRealVar IsoMu_CBalpha ("IsoMu_CBalpha", "IsoMu_CBalpha", 1.66116, 0, 3, "Gev");
+    RooRealVar IsoMu_CBSig   ("IsoMu_CBSig"  , "IsoMu_CBSig"  , 1.41684, 0.1, 10, "Gev/c^{2}");
+    RooRealVar IsoMu_CBn     ("IsoMu_CBn"    , "IsoMu_CBn"    , 1.79598, 0, 10, "Gev/c^{2}");
+    RooRealVar IsoMu_CBalpha ("IsoMu_CBalpha", "IsoMu_CBalpha", 1.66116, 0, 3, "Gev/c^{2}");
     RooCBShape IsoMu_CB ("IsoMu_CB", "IsoMu_CB", Reco_mass ,
                              IsoMu_mean, IsoMu_CBSig  ,
                              IsoMu_CBn , IsoMu_CBalpha); 
