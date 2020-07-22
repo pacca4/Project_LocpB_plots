@@ -93,7 +93,7 @@ def plot_all_distr_isoMu(sigs, h_mu, plot_arrow=False, bound=2):
     fig.colorbar(ax0[3], ax=axs[0])
     axs[1].plot(xs,sigs, lw=2)
     if plot_arrow: axs[1].arrow(xs[0], 2., x-xs[0], 0,    length_includes_head=True, head_width=0.1,  lw=2, head_length=15,  color="darkorange")
-    if plot_arrow: axs[1].arrow(x,     2., 0,      -1.55, length_includes_head=True, head_width=15,   lw=2, head_length=0.1, color="darkorange")
+    if plot_arrow: axs[1].arrow(x,     2., 0,      -1.48, length_includes_head=True, head_width=15,   lw=2, head_length=0.1, color="darkorange")
     axs[1].set_xlabel("$\mu$")
     axs[1].set_ylabel("$\sigma_{med}(\mu)$")
     axs[1].set_title("Significance dependence on $\mu$")
