@@ -72,7 +72,7 @@ void SigFitIsoTrk (const string& file, double xmin=115, double xmax=135 , int nb
     c1->cd();
     Reco_mass.setBins( nbin );
     RooPlot* h_frame = Reco_mass.frame();
-    h_frame->SetTitle("Signal Fit, HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ Selection");
+    h_frame->SetTitle("Signal Distribution Fit :: IsoTrk");
     //RooArgSet params = RooArgList(rmass, widt1, widt2, widt3, sigma) ;
     //IsoTrk_Model.paramOn(h_frame,Layout(0.7, 0.95, 0.9), Format("NE", AutoPrecision()), Parameters(params));
 

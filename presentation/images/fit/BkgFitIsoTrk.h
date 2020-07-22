@@ -49,7 +49,7 @@ void BkgFitIsoTrk (const string& file, double xmin=70, double xmax=150 , int nbi
     c1->cd();
     Reco_mass.setBins( nbin );
     RooPlot* h_frame = Reco_mass.frame();
-    h_frame->SetTitle("Background Fit, HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ Selection");
+    h_frame->SetTitle("Background Distribution Fit :: IsoTrk");
 
     CutData->plotOn( h_frame );
     IsoTrk_exp.plotOn( h_frame, LineColor(kRed) );

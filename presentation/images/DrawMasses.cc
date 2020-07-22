@@ -31,7 +31,7 @@ void DrawMasses(const string& path="./"){
     EvTree->Draw("Reco_mass>>h", "", "goff");
     h->GetXaxis()->SetTitle("Reconstructed mass (Gev)");
     h->GetYaxis()->SetTitle("Events/(0.5 GeV)");
-    h->SetTitle("Background distribution, HLT_IsoMu27 Selection");
+    h->SetTitle("Background distribution :: IsoMu");
     
     h->Draw();
 
@@ -50,7 +50,7 @@ void DrawMasses(const string& path="./"){
     c1 = new TCanvas( "c1","c1", 800, 600 );
     h->GetXaxis()->SetTitle("Reconstructed mass (Gev)");
     h->GetYaxis()->SetTitle("Events/(0.5 GeV)");
-    h->SetTitle("Background distribution, HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ Selection");
+    h->SetTitle("Background distribution :: IsoTrk");
     
     h->Draw();    c1->Print("BkgMassIsoTrk.png");
     c1->Print("BkgMassIsoTrk.pdf");
@@ -64,7 +64,7 @@ void DrawMasses(const string& path="./"){
     c1 = new TCanvas( "c1","c1", 800, 600 );
     h->GetXaxis()->SetTitle("Reconstructed mass (Gev)");
     h->GetYaxis()->SetTitle("Events/(0.2 GeV)");
-    h->SetTitle("Signal distribution, HLT_IsoMu27 Selection");
+    h->SetTitle("Signal distribution :: IsoMu");
     
     h->Draw();    
     c1->Print("SigMassIsoMu.png");
@@ -80,7 +80,7 @@ void DrawMasses(const string& path="./"){
     c1 = new TCanvas( "c1","c1", 800, 600 );
     h->GetXaxis()->SetTitle("Reconstructed mass (Gev)");
     h->GetYaxis()->SetTitle("Events/(0.2 GeV)");
-    h->SetTitle("Signal distribution, HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ Selection");
+    h->SetTitle("Signal distribution :: IsoTrk");
     
     h->Draw();    
     c1->Print("SigMassIsoTrk.png");
