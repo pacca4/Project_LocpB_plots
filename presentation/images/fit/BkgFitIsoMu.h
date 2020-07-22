@@ -52,7 +52,7 @@ void BkgFitIsoMu (const string& file, double xmin=70, double xmax=150 , int nbin
     c1->cd();
     Reco_mass.setBins( nbin );
     RooPlot* h_frame = Reco_mass.frame();
-    h_frame->SetTitle("Background Distribution Fit");
+    h_frame->SetTitle("Background Fit, HLT_IsoMu27 Selection");
 
     CutData->plotOn( h_frame );
     IsoMu_polyn.plotOn( h_frame , LineColor(kRed));
