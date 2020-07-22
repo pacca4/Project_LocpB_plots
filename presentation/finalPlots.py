@@ -34,7 +34,7 @@ def sub_plot_hists(ax, nb, idx, ndf=38, upper=120):
     h0, e0 = np.histogram(data_AllMu[0]  , bins=nb, range=(0,upper), density=True)
     h1, e1 = np.histogram(data_AllMu[idx], bins=nb, range=(0,upper), density=True)
     med1 = np.median(data_AllMu[idx])
-    pObs, sigObs = significance(nb, idx, upper)
+    pObs, sigObs = significance(nb, idx, upper, ndf)
     
     ax.fill(np.linspace(0,upper, nb), h0, alpha=0.6, label="q($\mu=0$) distribution")
     ax.fill(np.linspace(0,upper, nb), h1, alpha=0.6, label="q($\mu="+str(mus[idx])+"$) distribution")
@@ -70,6 +70,7 @@ def plot_all_distr_isoTrk(sigs, h_mu, plot_arrow=False, bound=2):
     axs[1].set_xlabel("$\mu$")
     axs[1].set_ylabel("$\sigma_{med}(\mu)$")
     axs[1].set_title("Significance dependence on $\mu$")
+    if plot_arrow: return x
     
     
 def plot_all_distr_isoMu(sigs, h_mu, plot_arrow=False, bound=2):
@@ -97,3 +98,4 @@ def plot_all_distr_isoMu(sigs, h_mu, plot_arrow=False, bound=2):
     axs[1].set_xlabel("$\mu$")
     axs[1].set_ylabel("$\sigma_{med}(\mu)$")
     axs[1].set_title("Significance dependence on $\mu$")
+    if plot_arrow: return x
