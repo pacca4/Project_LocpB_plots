@@ -34,7 +34,7 @@ void PadDraw( const string& data_file,  const string& mc_file, const string& tre
     //mc_h->DrawNormalized("same");
 
     if (da_h->GetMaximum() < mc_h->GetMaximum())
-    	da_h->GetYaxis()->SetRangeUser(0, mc_h->GetMaximum());
+    	da_h->GetYaxis()->SetRangeUser(0, mc_h->GetMaximum()*1.1);
 
     auto legend = new TLegend(0.4,0.8,0.5,0.9);
     legend->AddEntry(da_h, "data", "l");
