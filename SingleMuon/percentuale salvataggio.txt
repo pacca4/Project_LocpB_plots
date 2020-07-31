@@ -1,0 +1,52 @@
+Tagli di isolamento bg
+
+- Entrambi:
+Total saved: 11496 -> 8.22018%
+
+- Solo muoni:
+Total saved: 52391 -> 37.462%
+
+- Solo photoni:
+Total saved: 26294 -> 18.8014%
+
+
+
+Tagli di isolamento mc:
+-entrambi:
+Total saved: 67574 -> 81.8841%
+
+- Solo muoni:
+Total saved: 68931 -> 83.5284%
+
+- Solo fotoni:
+Total saved: 80909 -> 98.043%
+
+MC all:
+Total saved: 63453 -> 76.8904%
+
+bg all:
+Total saved: 1732 -> 1.23846%
+
+anche con tagli cinematici (PT_muon0>28, PT_muon1>8, PT_fotone>25):
+-bg:
+Total saved: 1134 -> 0.810863%
+
+-MC:
+Total saved: 53662 -> 65.0259%
+
+
+anche con tagli cinematici (PT_muon0>28, PT_muon1>5, PT_fotone>25):
+-bg:
+Total saved: 1551 -> 1.10904%
+
+-MC:
+Total saved: 61475 -> 74.4935%
+
+
+
+anche con tagli cinematici (PT_muon0>28, PT_fotone>25):
+-bg:
+Total saved: 1780 -> 1.27278%
+
+-MC:
+Total saved: 65272 -> 79.0946%
