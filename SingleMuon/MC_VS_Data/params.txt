@@ -1,0 +1,28 @@
+Exp slope: -0.0190705
+
+
+
+ 
+
+IsoTrk_mean     1.24814e+02   
+IsoTrk_sig1     9.47054e-01   
+IsoTrk_sig2     1.99601e+00   
+IsoTrk_sig3     3.95716e+00   
+IsoTrk_gfrac1   2.11476e-01 
+IsoTrk_gfrac2   6.88489e-01 
+IsoTrk_CBSig    1.26230e+00  
+IsoTrk_CBn      1.16858e+00    
+IsoTrk_CBalpha  2.94261e+00 
+IsoTrk_Frac     5.02303e-01  
+
+
+1.24814e+02, "GeV");
+9.47054e-01, "GeV");
+1.99601e+00, "GeV");
+3.95716e+00, "GeV");
+2.11476e-01       );
+6.88489e-01       );
+1.26230e+00, "Gev");
+1.16858e+00, "Gev");
+2.94261e+00, "Gev");
+5.02303e-01       );

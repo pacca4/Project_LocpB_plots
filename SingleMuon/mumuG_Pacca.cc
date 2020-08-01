@@ -76,12 +76,12 @@ void mumuG_Pacca( const string& file,  const string& outfile ) {
     TFile *newfile = new TFile(("Final_"+outfile+".root").c_str(),"recreate");
     TTree *newtree   = oldtree->CloneTree(0); 
     TTreeReader myread(oldtree);
-	//TTreeReaderArray<Float_t> muon_pt     = {myread, "Muon_pt"       };
+	TTreeReaderArray<Float_t> muon_pt       = {myread, "Muon_pt"       };
 	//TTreeReaderArray<Int_t>   muon_ch     = {myread, "Muon_charge"   }; 
 	//TTreeReaderArray<Float_t> muon_eta    = {myread, "Muon_eta"      };
 	//TTreeReaderArray<Float_t> muon_phi    = {myread, "Muon_phi"      };
 	//TTreeReaderArray<Float_t> muon_mass   = {myread, "Muon_mass"     };
-    //TTreeReaderArray<Float_t> photon_pt   = {myread, "Photon_pt"     };
+    TTreeReaderArray<Float_t> photon_pt   = {myread, "Photon_pt"     };
     //TTreeReaderArray<Float_t> jmass       = {myread, "JPsi_mass"     };
     //TTreeReaderArray<Float_t> rmass       = {myread, "Reco_mass"     };
     //TTreeReaderArray<Float_t> photon_phi  = {myread, "Photon_phi"    };
@@ -114,14 +114,14 @@ void mumuG_Pacca( const string& file,  const string& outfile ) {
         if (Photon_mvaID_WP80[0]==false) save=false;
 
         //isolate muon and photon
-        if (Photon_pfRelIso03_all[0]>0.2) save=false;
-        if (Muon_pfRelIso03_all[0]>0.2)  save=false;
-        if (Muon_pfRelIso03_all[1]>0.2)  save=false;
+        if (Photon_pfRelIso03_all[0]>0.15  )  save=false; //original 0.2
+        if (Muon_pfRelIso03_all[0]  >0.15  )  save=false; //originol 0.2
+        if (Muon_pfRelIso03_all[1]  >0.15  )  save=false; //originol 0.2
 
         //tagli cinematici
-        //if (muon_pt[0]<28)   save=false;
+        if (muon_pt[0]<28)   save=false;
         //if (muon_pt[1]<5)    save=false;
-        //if (photon_pt[0]<25) save=false;
+        //if (photon_pt[0]<30) save=false;
 
 
       //  if (jmass[0]<cutParams::JPsiMass_min ||
