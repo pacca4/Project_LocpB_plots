@@ -1,3 +1,3 @@
-#BSUB -J ToyMC_BatchMu_IsoMu_v05
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
 cd ..
-root -l -b -q '../../../macros/MC/v05/ToyMC_BatchMu_IsoMu_v05.cc('100000', '40', '21000', '1000');'
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '2');'
