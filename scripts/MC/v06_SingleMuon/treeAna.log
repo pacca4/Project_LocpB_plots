@@ -1,0 +1,3993 @@
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878026: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Exited
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:40:38 2020
+Results reported at Sat Aug  1 20:40:38 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd ..
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '0');'
+
+------------------------------------------------------------
+
+Exited with exit code 127.
+
+Resource usage summary:
+
+    CPU time   :      0.08 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+/homeui/aavalent/.lsbatch/1596307236.69878026.shell: line 4: root: command not found
+Sender: LSF System <lsfadmin@up-00-08>
+Subject: Job 69878028: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Exited
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-08>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:40:38 2020
+Results reported at Sat Aug  1 20:40:39 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd ..
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '2');'
+
+------------------------------------------------------------
+
+Exited with exit code 127.
+
+Resource usage summary:
+
+    CPU time   :      0.15 sec.
+    Max Memory :         3 MB
+    Max Swap   :        37 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+/homeui/aavalent/.lsbatch/1596307236.69878028.shell: line 4: root: command not found
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878027: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Exited
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:40:38 2020
+Results reported at Sat Aug  1 20:40:43 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd ..
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '1');'
+
+------------------------------------------------------------
+
+Exited with exit code 127.
+
+Resource usage summary:
+
+    CPU time   :      0.08 sec.
+    Max Memory :         1 MB
+    Max Swap   :        28 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+/homeui/aavalent/.lsbatch/1596307236.69878027.shell: line 4: root: command not found
+Sender: LSF System <lsfadmin@up-00-07>
+Subject: Job 69878052: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-07>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:41:54 2020
+Results reported at Sat Aug  1 20:41:59 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '2');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      2.15 sec.
+    Max Memory :         2 MB
+    Max Swap   :        29 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(10, 100, 1600, 2);...
+Sender: LSF System <lsfadmin@up-00-08>
+Subject: Job 69878051: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-08>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:41:54 2020
+Results reported at Sat Aug  1 20:42:01 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '1');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      2.83 sec.
+    Max Memory :         3 MB
+    Max Swap   :        37 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(10, 100, 1600, 1);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878050: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:41:54 2020
+Results reported at Sat Aug  1 20:42:03 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '0');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      1.84 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(10, 100, 1600, 0);...
+Sender: LSF System <lsfadmin@up-00-08>
+Subject: Job 69878079: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-08>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:43:24 2020
+Results reported at Sat Aug  1 20:43:30 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '2');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      2.81 sec.
+    Max Memory :         3 MB
+    Max Swap   :        37 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(10, 100, 1600, 2);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878077: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:43:24 2020
+Results reported at Sat Aug  1 20:43:32 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '0');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      1.82 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(10, 100, 1600, 0);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878078: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:43:24 2020
+Results reported at Sat Aug  1 20:43:32 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '1');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      1.89 sec.
+    Max Memory :         1 MB
+    Max Swap   :        28 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(10, 100, 1600, 1);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878314: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:51:42 2020
+Results reported at Sat Aug  1 20:51:47 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '2');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      2.55 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(10, 100, 1600, 2);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878313: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:51:42 2020
+Results reported at Sat Aug  1 20:51:51 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '1');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      1.85 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(10, 100, 1600, 1);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878312: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:51:42 2020
+Results reported at Sat Aug  1 20:51:51 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('10', '100', '1600', '0');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      1.95 sec.
+    Max Memory :         1 MB
+    Max Swap   :        28 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(10, 100, 1600, 0);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878358: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:54:03 2020
+Results reported at Sat Aug  1 21:13:53 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '0');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1184.60 sec.
+    Max Memory :       203 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 0);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878367: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:55:05 2020
+Results reported at Sat Aug  1 21:15:10 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '45');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1203.00 sec.
+    Max Memory :       201 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 45);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878371: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:56:06 2020
+Results reported at Sat Aug  1 21:15:59 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '65');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1193.32 sec.
+    Max Memory :       201 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 65);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878360: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:54:03 2020
+Results reported at Sat Aug  1 21:15:57 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '10');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1302.19 sec.
+    Max Memory :       203 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 10);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878361: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:54:03 2020
+Results reported at Sat Aug  1 21:16:05 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '15');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1318.68 sec.
+    Max Memory :       203 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 15);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878359: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:54:03 2020
+Results reported at Sat Aug  1 21:16:28 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '5');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1336.23 sec.
+    Max Memory :       203 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 5);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878366: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:55:05 2020
+Results reported at Sat Aug  1 21:16:40 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '40');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1292.87 sec.
+    Max Memory :       201 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 40);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878365: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:55:05 2020
+Results reported at Sat Aug  1 21:17:05 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '35');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1306.86 sec.
+    Max Memory :       201 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 35);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878368: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:55:05 2020
+Results reported at Sat Aug  1 21:17:11 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '50');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1318.02 sec.
+    Max Memory :       201 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 50);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878369: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:56:06 2020
+Results reported at Sat Aug  1 21:17:39 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '55');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1290.59 sec.
+    Max Memory :       201 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 55);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878372: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:56:06 2020
+Results reported at Sat Aug  1 21:17:45 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '70');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1297.76 sec.
+    Max Memory :       201 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 70);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878374: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:57:07 2020
+Results reported at Sat Aug  1 21:17:53 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '80');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1242.83 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 80);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878370: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:56:06 2020
+Results reported at Sat Aug  1 21:18:01 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '60');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1314.65 sec.
+    Max Memory :       201 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 60);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878380: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:58:09 2020
+Results reported at Sat Aug  1 21:18:25 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '110');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1216.91 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 110);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878376: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:57:07 2020
+Results reported at Sat Aug  1 21:18:43 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '90');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1293.40 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 90);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878375: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:57:07 2020
+Results reported at Sat Aug  1 21:18:45 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '85');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1293.61 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 85);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878373: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:57:07 2020
+Results reported at Sat Aug  1 21:18:50 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '75');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1300.63 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 75);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878379: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:58:09 2020
+Results reported at Sat Aug  1 21:19:52 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '105');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1300.76 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 105);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878378: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:58:09 2020
+Results reported at Sat Aug  1 21:20:13 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '100');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1305.15 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 100);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878377: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:58:09 2020
+Results reported at Sat Aug  1 21:20:19 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '95');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1329.48 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 95);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878388: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:00:16 2020
+Results reported at Sat Aug  1 21:20:46 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '150');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1229.33 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 150);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878384: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:59:10 2020
+Results reported at Sat Aug  1 21:20:51 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '130');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1298.80 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 130);...
+Sender: LSF System <lsfadmin@up-00-02>
+Subject: Job 69878364: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-02>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:54:08 2020
+Results reported at Sat Aug  1 21:20:49 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '30');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1598.43 sec.
+    Max Memory :       249 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 30);...
+Sender: LSF System <lsfadmin@up-00-07>
+Subject: Job 69878363: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-07>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:54:08 2020
+Results reported at Sat Aug  1 21:20:55 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '25');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1599.70 sec.
+    Max Memory :       211 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 25);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878383: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:59:10 2020
+Results reported at Sat Aug  1 21:21:05 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '125');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1311.24 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 125);...
+Sender: LSF System <lsfadmin@up-00-08>
+Subject: Job 69878362: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-08>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:54:03 2020
+Results reported at Sat Aug  1 21:21:03 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '20');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1619.59 sec.
+    Max Memory :       224 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 20);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878381: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:59:10 2020
+Results reported at Sat Aug  1 21:21:20 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '115');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1324.46 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 115);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878393: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:01:18 2020
+Results reported at Sat Aug  1 21:21:43 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '175');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1223.33 sec.
+    Max Memory :       247 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 175);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878387: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:00:16 2020
+Results reported at Sat Aug  1 21:21:57 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '145');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1298.62 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 145);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878389: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:00:16 2020
+Results reported at Sat Aug  1 21:21:59 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '155');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1301.97 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 155);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878386: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:00:16 2020
+Results reported at Sat Aug  1 21:22:10 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '140');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1312.97 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 140);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878392: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:01:18 2020
+Results reported at Sat Aug  1 21:22:49 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '170');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1288.43 sec.
+    Max Memory :       247 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 170);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878390: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:01:18 2020
+Results reported at Sat Aug  1 21:23:05 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '160');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1303.46 sec.
+    Max Memory :       247 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 160);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878391: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:01:18 2020
+Results reported at Sat Aug  1 21:23:05 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '165');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1304.21 sec.
+    Max Memory :       247 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 165);...
+Sender: LSF System <lsfadmin@up-00-07>
+Subject: Job 69878385: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-07>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 20:59:37 2020
+Results reported at Sat Aug  1 21:25:51 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '135');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1574.13 sec.
+    Max Memory :       249 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 135);...
+Sender: LSF System <lsfadmin@up-00-08>
+Subject: Job 69878394: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-08>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:05:45 2020
+Results reported at Sat Aug  1 21:32:58 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '180');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1632.32 sec.
+    Max Memory :       222 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 180);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878395: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:13:57 2020
+Results reported at Sat Aug  1 21:34:29 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '185');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1232.05 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 185);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878396: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:15:14 2020
+Results reported at Sat Aug  1 21:35:16 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '190');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1201.94 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 190);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878399: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:16:15 2020
+Results reported at Sat Aug  1 21:36:38 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '205');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1220.20 sec.
+    Max Memory :       203 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 205);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878397: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:15:59 2020
+Results reported at Sat Aug  1 21:37:44 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '195');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1301.94 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 195);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878398: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:16:10 2020
+Results reported at Sat Aug  1 21:38:01 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '200');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1310.29 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 200);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878405: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:17:57 2020
+Results reported at Sat Aug  1 21:38:17 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '235');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1219.85 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 235);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878402: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:17:16 2020
+Results reported at Sat Aug  1 21:39:09 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '220');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1312.42 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 220);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878401: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:17:01 2020
+Results reported at Sat Aug  1 21:39:07 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '215');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1321.23 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 215);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878409: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:18:57 2020
+Results reported at Sat Aug  1 21:39:16 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '255');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1216.02 sec.
+    Max Memory :       203 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 255);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878403: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:17:32 2020
+Results reported at Sat Aug  1 21:39:20 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '225');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1305.52 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 225);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878406: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:18:02 2020
+Results reported at Sat Aug  1 21:40:14 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '240');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1327.02 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 240);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878407: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:18:17 2020
+Results reported at Sat Aug  1 21:40:23 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '245');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1319.30 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 245);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878408: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:18:32 2020
+Results reported at Sat Aug  1 21:40:31 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '250');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1316.74 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 250);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878416: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:20:48 2020
+Results reported at Sat Aug  1 21:41:02 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '290');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1214.76 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 290);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878410: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:19:02 2020
+Results reported at Sat Aug  1 21:41:10 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '260');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1325.93 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 260);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878411: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:19:19 2020
+Results reported at Sat Aug  1 21:41:18 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '265');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1317.91 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 265);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878412: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:19:35 2020
+Results reported at Sat Aug  1 21:41:37 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '270');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1311.30 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 270);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878423: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:21:49 2020
+Results reported at Sat Aug  1 21:42:10 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '325');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1219.92 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 325);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878413: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:20:18 2020
+Results reported at Sat Aug  1 21:42:06 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '275');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1299.58 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 275);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878414: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:20:23 2020
+Results reported at Sat Aug  1 21:42:15 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '280');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1309.28 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 280);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878415: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:20:38 2020
+Results reported at Sat Aug  1 21:42:36 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '285');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1316.24 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 285);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878427: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:22:50 2020
+Results reported at Sat Aug  1 21:42:52 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '345');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1202.32 sec.
+    Max Memory :       247 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 345);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878420: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:21:18 2020
+Results reported at Sat Aug  1 21:43:15 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '310');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1306.98 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 310);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878422: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:21:38 2020
+Results reported at Sat Aug  1 21:43:25 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '320');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1304.13 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 320);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878421: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:21:23 2020
+Results reported at Sat Aug  1 21:43:20 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '315');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1314.02 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 315);...
+Sender: LSF System <lsfadmin@up-00-08>
+Subject: Job 69878404: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-08>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:17:47 2020
+Results reported at Sat Aug  1 21:44:00 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '230');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1571.35 sec.
+    Max Memory :       204 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 230);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878424: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:22:19 2020
+Results reported at Sat Aug  1 21:44:23 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '330');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1322.68 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 330);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878425: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:22:24 2020
+Results reported at Sat Aug  1 21:44:33 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '335');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1325.98 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 335);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878426: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:22:40 2020
+Results reported at Sat Aug  1 21:44:47 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '340');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1308.85 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 340);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878429: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:23:26 2020
+Results reported at Sat Aug  1 21:45:15 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '355');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1302.04 sec.
+    Max Memory :       247 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 355);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878428: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:23:20 2020
+Results reported at Sat Aug  1 21:45:23 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '350');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1319.01 sec.
+    Max Memory :       247 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 350);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878432: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:23:41 2020
+Results reported at Sat Aug  1 21:45:37 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '360');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1315.00 sec.
+    Max Memory :       247 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 360);...
+Sender: LSF System <lsfadmin@up-00-08>
+Subject: Job 69878419: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-08>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:21:03 2020
+Results reported at Sat Aug  1 21:47:26 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '305');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1582.15 sec.
+    Max Memory :       222 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 305);...
+Sender: LSF System <lsfadmin@up-00-02>
+Subject: Job 69878417: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-02>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:20:53 2020
+Results reported at Sat Aug  1 21:47:29 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '295');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1595.03 sec.
+    Max Memory :       211 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 295);...
+Sender: LSF System <lsfadmin@up-00-07>
+Subject: Job 69878418: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-07>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:20:58 2020
+Results reported at Sat Aug  1 21:47:48 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '300');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1606.73 sec.
+    Max Memory :       211 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 300);...
+Sender: LSF System <lsfadmin@up-00-02>
+Subject: Job 69878433: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-02>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:25:44 2020
+Results reported at Sat Aug  1 21:52:22 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '365');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1596.62 sec.
+    Max Memory :       247 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 365);...
+Sender: LSF System <lsfadmin@up-00-07>
+Subject: Job 69878434: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-07>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:25:55 2020
+Results reported at Sat Aug  1 21:52:50 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '370');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1597.83 sec.
+    Max Memory :       249 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 370);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878436: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:34:31 2020
+Results reported at Sat Aug  1 21:54:47 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '380');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1215.70 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 380);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878437: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:35:31 2020
+Results reported at Sat Aug  1 21:56:33 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '385');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1259.04 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 385);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878438: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:36:42 2020
+Results reported at Sat Aug  1 21:56:49 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '390');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1207.36 sec.
+    Max Memory :       203 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 390);...
+Sender: LSF System <lsfadmin@up-00-08>
+Subject: Job 69878435: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-08>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:33:00 2020
+Results reported at Sat Aug  1 21:58:11 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '375');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1492.45 sec.
+    Max Memory :       249 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 375);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878449: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:38:18 2020
+Results reported at Sat Aug  1 21:58:24 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '410');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1206.05 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 410);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878453: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:39:19 2020
+Results reported at Sat Aug  1 21:59:44 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '425');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1223.47 sec.
+    Max Memory :       203 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 425);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878441: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:38:03 2020
+Results reported at Sat Aug  1 21:59:46 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '405');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1301.72 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 405);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878440: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:37:58 2020
+Results reported at Sat Aug  1 21:59:50 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '400');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1311.21 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 400);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878439: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:37:48 2020
+Results reported at Sat Aug  1 21:59:58 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '395');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1329.47 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 395);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878459: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:41:05 2020
+Results reported at Sat Aug  1 22:00:57 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '450');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1192.09 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 450);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878452: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:39:14 2020
+Results reported at Sat Aug  1 22:01:05 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '420');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1310.26 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 420);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878451: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:39:08 2020
+Results reported at Sat Aug  1 22:01:27 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '415');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1331.42 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 415);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878454: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:39:24 2020
+Results reported at Sat Aug  1 22:01:48 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '430');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1332.21 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 430);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878455: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:40:17 2020
+Results reported at Sat Aug  1 22:02:16 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '435');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1314.57 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 435);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878475: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:42:11 2020
+Results reported at Sat Aug  1 22:02:19 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '475');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1199.31 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 475);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878457: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:40:33 2020
+Results reported at Sat Aug  1 22:02:48 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '445');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1313.08 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 445);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878456: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:40:28 2020
+Results reported at Sat Aug  1 22:02:42 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '440');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1333.62 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 440);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878464: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:41:20 2020
+Results reported at Sat Aug  1 22:03:03 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '455');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1300.19 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 455);...
+Sender: LSF System <lsfadmin@up-00-01>
+Subject: Job 69878482: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-01>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:43:11 2020
+Results reported at Sat Aug  1 22:03:20 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '495');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1193.18 sec.
+    Max Memory :       251 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 495);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878466: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:41:40 2020
+Results reported at Sat Aug  1 22:03:20 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '465');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1296.27 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 465);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878465: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:41:30 2020
+Results reported at Sat Aug  1 22:03:40 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '460');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1324.53 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 460);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878476: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:42:21 2020
+Results reported at Sat Aug  1 22:04:08 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '480');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1306.97 sec.
+    Max Memory :       200 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 480);...
+Sender: LSF System <lsfadmin@up-00-05>
+Subject: Job 69878479: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-05>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:42:41 2020
+Results reported at Sat Aug  1 22:04:20 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '490');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1294.88 sec.
+    Max Memory :       251 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 490);...
+Sender: LSF System <lsfadmin@up-00-04>
+Subject: Job 69878478: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-04>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:42:31 2020
+Results reported at Sat Aug  1 22:04:42 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '485');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1313.34 sec.
+    Max Memory :       251 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 485);...
+Sender: LSF System <lsfadmin@up-00-06>
+Subject: Job 69878483: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-06>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:43:21 2020
+Results reported at Sat Aug  1 22:05:27 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '500');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1306.32 sec.
+    Max Memory :       251 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 500);...
+Sender: LSF System <lsfadmin@up-00-02>
+Subject: Job 69878471: <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> Done
+
+Job <ToyMC_BatchMu_IsoTrk_v06_SingleMuon> was submitted from host <t2-ui-12.pd.infn.it> by user <aavalent> in cluster <t2farm>.
+Job was executed on host(s) <up-00-02>, in queue <local-cms-long>, as user <aavalent> in cluster <t2farm>.
+</homeui/aavalent> was used as the home directory.
+</lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon> was used as the working directory.
+Started at Sat Aug  1 21:42:06 2020
+Results reported at Sat Aug  1 22:08:18 2020
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -J ToyMC_BatchMu_IsoTrk_v06_SingleMuon
+#BSUB -o treeAna.log
+cd /lustre/cmswork/aavalent/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/python/postprocessing/SingleMuon_analysis/Project_LocpB_plots/scripts/MC/v06_SingleMuon
+root -l -b -q '../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc('100000', '100', '1600', '470');'
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1571.16 sec.
+    Max Memory :       249 MB
+    Max Swap   :       754 MB
+
+    Max Processes  :         6
+    Max Threads    :         7
+
+The output (if any) follows:
+
+
+Processing ../../../macros/MC/v06_SingleMuon/ToyMC_BatchMu_IsoTrk_v06.cc(100000, 100, 1600, 470);...
