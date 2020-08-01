@@ -122,7 +122,7 @@ void ToyMC_BatchMu_IsoTrk_v06(Int_t nsamples=1000, Int_t nbins=100, Int_t nev=10
 	RooMsgService::instance().setGlobalKillBelow(RooFit::WARNING);
 	RooMsgService::instance().setGlobalKillBelow(RooFit::FATAL);
 
-	ofstream ofile(Form("../../../macros/MC/sampling_tests/v05/BatchMu/SingleMuon/ToyMC_BatchMu_IsoTrk__nsamples_%d__nbins_%d__nev_%d__mu_%1.1f.txt", nsamples, nbins, nev, mu));
+	ofstream ofile(Form("../../../macros/MC/sampling_tests/v06/BatchMu/SingleMuon/ToyMC_BatchMu_IsoTrk__nsamples_%d__nbins_%d__nev_%d__mu_%1.1f.txt", nsamples, nbins, nev, mu));
 
 	for (int i=0; i<nsamples; ++i) {
 		ofile << runToyModel(nbins, nev, mu) << endl;
