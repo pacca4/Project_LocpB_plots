@@ -101,7 +101,7 @@ def plot_all_distr_isoMu(sigs, h_mu, plot_arrow=False, bound=2):
     if plot_arrow: return x
     
 def plot_all_distr_SingleMuon(sigs, h_mu, plot_arrow=False, bound=2):
-    xs = 2*np.linspace(0,250, 251)
+    xs = 2*np.linspace(0,200, 201)
     
     if plot_arrow:
         x = 0
@@ -114,7 +114,7 @@ def plot_all_distr_SingleMuon(sigs, h_mu, plot_arrow=False, bound=2):
                 x = (2.0 - q) / m + xs[i]
     
     fig, axs = plt.subplots(1,2, figsize=(18,6))
-    ax0 = axs[0].hist2d(h_mu.flatten(), data_AllMu.flatten(),  range= [[-1, 501], [20, 100]], bins=(251, 120), cmap='inferno')
+    ax0 = axs[0].hist2d(h_mu.flatten(), data_AllMu.flatten(),  range= [[-1, 401], [20, 100]], bins=(201, 120), cmap='inferno')
     axs[0].set_xlabel("$\mu$")
     axs[0].set_ylabel("q($\mu$)")
     axs[0].set_title("Distribution dependence on $\mu$")
