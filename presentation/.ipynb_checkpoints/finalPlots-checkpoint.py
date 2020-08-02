@@ -99,3 +99,30 @@ def plot_all_distr_isoMu(sigs, h_mu, plot_arrow=False, bound=2):
     axs[1].set_ylabel("$\sigma_{med}(\mu)$")
     axs[1].set_title("Significance dependence on $\mu$")
     if plot_arrow: return x
+    
+def plot_all_distr_SingleMuon(sigs, h_mu, plot_arrow=False, bound=2):
+    xs = 2*np.linspace(0,250, 251)
+    
+    if plot_arrow:
+        x = 0
+        q = 0
+        m = 0
+        for i in range(len(sigs)-1):
+            if sigs[i]<=bound and sigs[i+1]>=bound:
+                m = (sigs[i+1] - sigs[i]) / (xs[i+1] - xs[i])
+                q = sigs[i]
+                x = (2.0 - q) / m + xs[i]
+    
+    fig, axs = plt.subplots(1,2, figsize=(18,6))
+    ax0 = axs[0].hist2d(h_mu.flatten(), data_AllMu.flatten(),  range= [[-1, 501], [20, 100]], bins=(251, 120), cmap='inferno')
+    axs[0].set_xlabel("$\mu$")
+    axs[0].set_ylabel("q($\mu$)")
+    axs[0].set_title("Distribution dependence on $\mu$")
+    fig.colorbar(ax0[3], ax=axs[0])
+    axs[1].plot(xs,sigs, lw=2)
+    if plot_arrow: axs[1].arrow(xs[0], 2., x-xs[0], 0,    length_includes_head=True, head_width=0.1,  lw=2, head_length=15,  color="darkorange")
+    if plot_arrow: axs[1].arrow(x,     2., 0,      -1.48, length_includes_head=True, head_width=15,   lw=2, head_length=0.1, color="darkorange")
+    axs[1].set_xlabel("$\mu$")
+    axs[1].set_ylabel("$\sigma_{med}(\mu)$")
+    axs[1].set_title("Significance dependence on $\mu$")
+    if plot_arrow: return x
