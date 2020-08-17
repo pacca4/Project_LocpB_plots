@@ -81,24 +81,24 @@ feature_list = [
 	"Photon_pfRelIso03_all[0]",
 ]
 feature_condition_list = [
-    "Muon_pt[0]",
-    "Muon_pt[1]",
-    "Photon_pt[0]",
-    "Muon_eta[0]",
-    "Muon_eta[1]",
-    "Photon_eta[0]",
-    "JPsi_mass",
-    "JPsi_pt",
-    "JPsi_eta",
-    "AngleCM_Mu0Mu1",
-    "DeltaEtaCM_Mu0Mu1",
-    "DeltaPhiCM_Mu0Mu1",
-    "AngleCM_JpsiPht",
-    "DeltaEtaCM_JpsiPht",
-    "DeltaPhiCM_JpsiPht",
-	"Muon_pfRelIso03_all[0]",
-	"Muon_pfRelIso03_all[1]",
-	"Photon_pfRelIso03_all[0]",
+    "Muon_pt[0] < 150",
+    "Muon_pt[1] < 60",
+    "Photon_pt[0] < 200",
+    "", #"Muon_eta[0]"
+    "", #"Muon_eta[1]"
+    "", #"Photon_eta[0]"
+    "", #"JPsi_mass",
+    "JPsi_pt < 250",
+    "", #"JPsi_eta",
+    "AngleCM_Mu0Mu1 > 0.96", #"AngleCM_Mu0Mu1",
+    "abs(DeltaEtaCM_Mu0Mu1) < 0.5", #"DeltaEtaCM_Mu0Mu1",
+    "abs(DeltaPhiCM_Mu0Mu1) < 0.5", #"DeltaPhiCM_Mu0Mu1",
+    "", #"AngleCM_JpsiPht",
+    "abs(DeltaEtaCM_JpsiPht) < 5", #"DeltaEtaCM_JpsiPht",
+    "", #"DeltaPhiCM_JpsiPht",
+	"Muon_pfRelIso03_all[0] > 0.001   && Muon_pfRelIso03_all[0] < 0.25  ", #"Muon_pfRelIso03_all[0]",
+	"Muon_pfRelIso03_all[1] > 0.001   && Muon_pfRelIso03_all[1] < 0.25  ", #"Muon_pfRelIso03_all[1]",
+	"Photon_pfRelIso03_all[0] > 0.001 && Photon_pfRelIso03_all[0] < 0.25", #"Photon_pfRelIso03_all[0]",
 ]
 feature_title_list = [
     "Leading muon p_{T} distributions",
@@ -116,9 +116,9 @@ feature_title_list = [
     "cos #theta_{J/#psi#gamma} CM distributions",
     "#Delta#eta_{J/#psi#gamma} CM distributions",
     "#Delta#phi_{J/#psi#gamma} CM distributions",
-	"Leading muon isolatation distributions",
-    "Subleading muon isolatation distributions",
-    "Photon isolatation distributions",
+	"Leading muon isolatation distributions (>0.001)",
+    "Subleading muon isolatation distributions (>0.001)",
+    "Photon isolatation distributions (>0.001)",
 ]
 feature_xlab_list = [
     "p_{T,#mu[0]} (GeV/c)",
@@ -153,7 +153,7 @@ legend = [0] * nr * nc
 for i in range(len(feature_list)):
     c1.cd(i+1)
     draw_feature(feature_list[i], i,
-                 #feature_condition=feature_condition_list[i],
+                 feature_condition=feature_condition_list[i],
                  title=feature_title_list[i],
                  xlab=feature_xlab_list[i],
                  lw=2,

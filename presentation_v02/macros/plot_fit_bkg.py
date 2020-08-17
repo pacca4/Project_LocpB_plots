@@ -20,10 +20,12 @@ ROOT.RooMsgService.instance().setGlobalKillBelow(5)
 #RooMsgService::instance().setGlobalKillBelow(RooFit::WARNING);
 #RooMsgService::instance().setGlobalKillBelow(RooFit::FATAL);
 
+nbins = 60
+
 file_bkg = TFile.Open("data/cutted/bkg.root")
 tree_bkg = file_bkg.Events
 
-h = TH1F("h", "h", 40, 70, 150)
+h = TH1F("h", "h", nbins, 70, 150)
 tree_bkg.Draw("Reco_mass>>h", "")
 
 
@@ -46,7 +48,7 @@ IsoMu_exp.fitTo(CutData , RooFit.Range("lowMass,highMass"), RooFit.Verbose(ROOT.
 c1 = TCanvas("c1", "c1", 800, 600);
 c1.cd();
 
-Reco_mass.setBins( 40 );
+Reco_mass.setBins( nbins );
 h_frame = Reco_mass.frame();
 h_frame.SetTitle("Background m_{#mu#mu#gamma} Distribution Fit");
 
