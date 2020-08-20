@@ -54,7 +54,7 @@ double runToyModel(Int_t nbins=100, Int_t nev=500000, Double_t mu=1.0) {
 
 	// --- Construct signal+background PDF --- //
 	RooRealVar NSig("NSig",  "#Signal events",        1.224*0.2105*mu);
-	RooRealVar NBkg("NBkg",  "#Background events", 1554.);
+	RooRealVar NBkg("NBkg",  "#Background events", 994.);
 	RooAddPdf Model("Model", "B+mu*S", RooArgList(SigModel,BkgModel), RooArgList(NSig,NBkg));
 
 	Reco_mass.setBins(nbins);
